@@ -1,0 +1,30 @@
+{
+    "output": {
+        "bass_enhancer#0": {
+            "amount": 0.0,
+            "blend": 0.0,
+            "bypass": false,
+            "floor": 20.0,
+            "floor-active": false,
+            "harmonics": 8.5,
+            "input-gain": 0.0,
+            "output-gain": -11.3,
+            "scope": 100.0
+        },
+        "blocklist": [],
+        "loudness#0": {
+            "bypass": false,
+            "clipping": false,
+            "clipping-range": 6.0,
+            "fft": "4096",
+            "input-gain": 10.8,
+            "output-gain": 10.8,
+            "std": "ISO226-2003",
+            "volume": 0.0
+        },
+        "plugins_order": [
+            "loudness#0",
+            "bass_enhancer#0"
+        ]
+    }
+}
