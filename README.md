@@ -1,6 +1,8 @@
 # Helen Chong's Dot Files
 
-My dot files for my Linux home, managed by [yadm](https://yadm.io/).
+Dot files for my Linux home, managed by [yadm](https://yadm.io/).
+
+These files are primarily intended for Fedora Linux with KDE Plasma desktop environment.
 
 ## Instructions
 
