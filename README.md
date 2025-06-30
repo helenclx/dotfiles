@@ -4,4 +4,6 @@ My dot files for my Linux home, managed by [yadm](https://yadm.io/).
 
 ## Instructions
 
-After cloning this repository with yadm, run the `setup-home.sh` script.
+1. Install yadm.
+2. Clone this repository.
+3. Run the `setup-home.sh` script.
