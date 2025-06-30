@@ -17,6 +17,9 @@ PS1="%F{blue}%n@%m%f %B%F{green}%(4~|...|)%3~%F{white} %# %b%f%f"
 # Set zsh options
 setopt HIST_IGNORE_SPACE
 
+# Set default editor
+export EDITOR=nvim
+
 # Export $PATH
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/bin
