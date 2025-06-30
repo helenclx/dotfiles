@@ -3,3 +3,5 @@
 	name = Helen Chong
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
