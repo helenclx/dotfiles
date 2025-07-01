@@ -1,5 +1,5 @@
 {"_id":"baseTheme","value":"dracula"}
-{"_id":"bounds","value":{"x":77,"y":28,"width":1202,"height":800,"maximized":true,"fullScreen":false}}
+{"_id":"bounds","value":{"x":75,"y":28,"width":1204,"height":800,"maximized":true,"fullScreen":false}}
 {"_id":"checkForBlogPosts","value":false}
 {"_id":"defaultQuality","value":"1080"}
 {"_id":"enableSearchSuggestions","value":false}
@@ -12,3 +12,4 @@
 {"_id":"rememberSearchHistory","value":false}
 {"_id":"saveWatchedProgress","value":false}
 {"_id":"useSponsorBlock","value":true}
+{"_id":"defaultViewingMode","value":"theatre"}
