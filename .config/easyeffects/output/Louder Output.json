@@ -7,8 +7,8 @@
             "floor": 20.0,
             "floor-active": false,
             "harmonics": 8.5,
-            "input-gain": 0.0,
-            "output-gain": -11.3,
+            "input-gain": 1.5,
+            "output-gain": 1.5,
             "scope": 100.0
         },
         "blocklist": [],
@@ -17,8 +17,8 @@
             "clipping": false,
             "clipping-range": 6.0,
             "fft": "4096",
-            "input-gain": 10.8,
-            "output-gain": 10.8,
+            "input-gain": 3.5,
+            "output-gain": 3.5,
             "std": "ISO226-2003",
             "volume": 0.0
         },
