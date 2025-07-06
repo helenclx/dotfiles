@@ -7,8 +7,8 @@ These files are primarily intended for [Fedora Linux](https://www.fedoraproject.
 ## Instructions
 
 1. Install [yadm](https://yadm.io/).
-2. Clone this repository with yadm.
-3. Run the `setup-home.sh` script.
+1. Clone this repository with yadm.
+1. Install my bootstrap program for yadm when prompted.
 
 ## Additional Setup
 
