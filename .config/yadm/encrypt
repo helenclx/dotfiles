@@ -1,2 +1,5 @@
 .ssh/config
 .ssh/id_ed25519_*
+.gnupg/*.key
+.gnupg/*.gpg
+.gnupg/pubring.kbx
