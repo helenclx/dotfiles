@@ -13,3 +13,7 @@ These files are primarily intended for Fedora Linux with KDE Plasma desktop envi
 ## Additional Setup
 
 In addition to these dot files, I have a custom setup for [Neovim](https://neovim.io/), my main editor. See [my LazyVim repository](https://git.helenchong.dev/helenchong/LazyVim) for more information.
+
+## See Also
+
+- [My /uses page](https://helenchong.dev/uses/) — A list of hardware and software I use.
