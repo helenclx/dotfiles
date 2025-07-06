@@ -1,12 +1,12 @@
 # Helen Chong's Dot Files
 
-Dot files for my Linux home, managed with [yadm](https://yadm.io/).
+Configuration files for my Linux home directory, managed with [yadm](https://yadm.io/).
 
-These files are primarily intended for Fedora Linux with KDE Plasma desktop environment.
+These files are primarily intended for [Fedora Linux](https://www.fedoraproject.org/), with [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment.
 
 ## Instructions
 
-1. Install yadm.
+1. Install [yadm](https://yadm.io/).
 2. Clone this repository with yadm.
 3. Run the `setup-home.sh` script.
 
