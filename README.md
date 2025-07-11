@@ -2,10 +2,22 @@
 
 Configuration files for my Linux home directory, managed with [yadm](https://yadm.io/).
 
-These files are primarily intended for [Fedora Linux](https://www.fedoraproject.org/), with [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment.
+These files are primarily intended for [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment.
 
-## Instructions
+## List of Software that Uses These Configuration Files
 
+- [Easy Effects](https://github.com/wwmm/easyeffects)
+- [Fcitx 5](https://fcitx-im.org/)
+    - [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
+- [Ghostwriter](https://ghostwriter.kde.org/)
+- [Neovim](https://neovim.io/)
+- [Vim](https://www.vim.org/)
+- [Zoxide](https://github.com/ajeetdsouza/zoxide)
+- [Zsh](https://www.zsh.org/)
+
+## Instructions for Using This Repository
+
+1. Install the software listed above that use these configuration files.
 1. Install [yadm](https://yadm.io/).
 1. Clone this repository with yadm.
 1. Install my bootstrap program for yadm when prompted.
