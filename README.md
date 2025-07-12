@@ -9,6 +9,7 @@ These files are primarily intended for [KDE Plasma](https://kde.org/plasma-deskt
 - [Easy Effects](https://github.com/wwmm/easyeffects)
 - [Fcitx 5](https://fcitx-im.org/)
     - [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
+	- A Chinese font such as `noto-fonts-cjk` is required to display Chinese characters
 - [Ghostwriter](https://ghostwriter.kde.org/)
 - [Neovim](https://neovim.io/)
 - [Vim](https://www.vim.org/)
