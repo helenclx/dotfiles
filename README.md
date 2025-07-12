@@ -11,6 +11,7 @@ These files are primarily intended for [KDE Plasma](https://kde.org/plasma-deskt
     - A package for configurating Fcitx 5, such as `kcm-fcitx5`, `kde-config-fcitx5` or `fcitx5-configtool`
     - [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
 	- A Chinese font such as `noto-fonts-cjk` is required to display Chinese characters
+    - It is strongly recommended to install the `fcitx5-qt` and `fcitx5-gtk` packages to ensure Fcitx 5 works consistently across apps
 - [Ghostwriter](https://ghostwriter.kde.org/)
 - [Neovim](https://neovim.io/)
 - [Vim](https://www.vim.org/)
