@@ -2,9 +2,17 @@
 
 Configuration files for my Linux home directory, managed with [yadm](https://yadm.io/).
 
-These files are primarily intended for [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment.
+These files are primarily intended for [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment. My personal computer's Linux distribution is [Arch Linux](https://archlinux.org/), but since I also use [Debian](https://www.debian.org/) on my remote servers, and have used [Fedora Linux](https://www.fedoraproject.org/), the setup of this repository supports these distros.
+
+## Instructions for Using This Repository
+
+1. Install [yadm](https://yadm.io/).
+1. Clone this repository with yadm.
+1. Install my bootstrap program for yadm when prompted.
 
 ## List of Software that Uses These Configuration Files
+
+Software marked with * will be installed by the bootstrap script of this yadm repository, otherwise the system wilil throw error or warning messages due to the absence of these software.
 
 - [Easy Effects](https://github.com/wwmm/easyeffects)
 - [Fcitx 5](https://fcitx-im.org/)
@@ -16,17 +24,10 @@ These files are primarily intended for [KDE Plasma](https://kde.org/plasma-deskt
 - [Kate](https://kate-editor.org/)
 - [KCharSelect](https://apps.kde.org/kcharselect/)
 - [KWrite](https://apps.kde.org/kwrite/)
-- [Neovim](https://neovim.io/)
+- [Neovim](https://neovim.io/)*
 - [Vim](https://www.vim.org/)
-- [Zoxide](https://github.com/ajeetdsouza/zoxide)
-- [Zsh](https://www.zsh.org/)
-
-## Instructions for Using This Repository
-
-1. Install the software listed above that use these configuration files.
-1. Install [yadm](https://yadm.io/).
-1. Clone this repository with yadm.
-1. Install my bootstrap program for yadm when prompted.
+- [Zoxide](https://github.com/ajeetdsouza/zoxide)*
+- [Zsh](https://www.zsh.org/)*
 
 ## Additional Setup
 
