@@ -3,9 +3,17 @@
 echo "Change Bash configuration to the one in my yadm repo..."
 yadm restore .bashrc
 
+echo "Set up the system locale..."
+locale_gen_file=/etc/locale.gen
+# Reference: https://gist.github.com/le0me55i/e1f2244cdc0d64d8e541378357543b15
+sudo sed -e '/en_GB.UTF-8/s/^#*//g' -i $locale_gen_file
+sudo sed -e '/en_SG.UTF-8/s/^#*//g' -i $locale_gen_file
+sudo sed -e '/ms_MY.UTF-8/s/^#*//g' -i $locale_gen_file
+sudo locale-gen
+
 distro_id=$(lsb_release -i | cut -f 2-)
 essential_packages=('zsh' 'zoxide' 'neovim')
-install_msg="Install essential packages..."
+install_msg="Install essential packages for these dot files..."
 
 if [[ $distro_id == "Arch" ]]; then
     echo $install_msg
