@@ -13,7 +13,9 @@ These files are primarily intended for [KDE Plasma](https://kde.org/plasma-deskt
 	- A Chinese font such as `noto-fonts-cjk` is required to display Chinese characters
     - It is strongly recommended to install the `fcitx5-qt` and `fcitx5-gtk` packages to ensure Fcitx 5 works consistently across apps
 - [Ghostwriter](https://ghostwriter.kde.org/)
+- [Kate](https://kate-editor.org/)
 - [KCharSelect](https://apps.kde.org/kcharselect/)
+- [KWrite](https://apps.kde.org/kwrite/)
 - [Neovim](https://neovim.io/)
 - [Vim](https://www.vim.org/)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
