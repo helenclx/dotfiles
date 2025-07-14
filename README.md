@@ -6,6 +6,13 @@ These files are primarily intended for [KDE Plasma](https://kde.org/plasma-deskt
 
 ## Instructions for Using This Repository
 
+1. Open `/etc/locale.gen`, and make sure these locales are not commented out:
+    ```
+    en_GB.UTF8 UTF8
+    en_SG.UTF8 UTF8
+    ms_MY.UTF8 UTF8
+    ```
+    - If the file `/etc/locale.gen` has been edited, save the file, then generate the locale by running the `locale-gen` command.
 1. Install [yadm](https://yadm.io/).
 1. Clone this repository with yadm.
 1. Install my bootstrap program for yadm when prompted.
