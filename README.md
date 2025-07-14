@@ -14,8 +14,8 @@ These files are primarily intended for [KDE Plasma](https://kde.org/plasma-deskt
     ```
     - If the file `/etc/locale.gen` has been edited, save the file, then generate the locale by running the `locale-gen` command.
 1. Install [yadm](https://yadm.io/).
-1. Clone this repository with yadm.
-1. Install my bootstrap program for yadm when prompted.
+1. Clone this repository with yadm into `$HOME`.
+1. Install my yadm bootstrap program when prompted.
 1. Reboot the system to apply changes to the system locale.
 
 ## List of Software that Uses These Configuration Files
