@@ -12,7 +12,7 @@ compinit
 # End of lines added by compinstall
 
 # Customise my prompt's style
-PS1="%F{blue}[%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{white}%B %# %b%f"
+PS1="%F{blue}➜ [%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{white}%B %# %b%f"
 
 # Set zsh options
 setopt HIST_IGNORE_SPACE
