@@ -11,8 +11,21 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Customise my prompt's style
-PS1="%F{blue}➜ [%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{white}%B %# %b%f"
+# Customise my prompt
+# Git branch prompt based on:
+# https://nickjanetakis.com/blog/add-a-git-branch-to-your-prompt-with-a-few-lines-fo-shell-scriptingt
+git_prompt() {
+    local branch="$(git symbolic-ref HEAD 2> /dev/null | cut -d'/' -f3-)"
+    local branch_truncated="${branch:0:30}"
+
+    if (( ${#branch} > ${#branch_truncated} )); then
+        branch="${branch_truncated}..."
+    fi
+
+    [ -n "${branch}" ] && echo " (${branch})"
+}
+setopt PROMPT_SUBST
+PROMPT='%F{blue}➜ [%n@%m]%f%F{green}[%(4~|...|)%3~]%f%{$fg[yellow]%}%F{cyan}$(git_prompt)%f%F{white}%B %# %b%f'
 
 # Set zsh options
 setopt HIST_IGNORE_SPACE
