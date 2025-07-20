@@ -28,6 +28,7 @@ Below only lists software and tools that uses the configuration files in this re
 
 Software marked with * will be installed by my yadm bootstrap program after cloning my yadm repository, otherwise the system will throw error or warning messages due to the absence of these software.
 
+- [bat](https://github.com/sharkdp/bat)
 - [Easy Effects](https://github.com/wwmm/easyeffects)
 - [Fcitx 5](https://fcitx-im.org/)
     - Additional packages:
