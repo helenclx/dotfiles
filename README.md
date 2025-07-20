@@ -4,6 +4,8 @@ Configuration files for my Linux home directory, managed with [yadm](https://yad
 
 These configurations are primarily intended for [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment. My personal computer's Linux distribution is [Arch Linux](https://archlinux.org/), but since I also use [Debian](https://www.debian.org/) on my remote servers, and have used [Fedora Linux](https://www.fedoraproject.org/), the setup of this repository supports these distros.
 
+In addition to the dot files of my yadm repository, I have a custom setup for [Neovim](https://neovim.io/), my main editor, in a [separate repository](https://git.helenchong.dev/helenchong/LazyVim) that will be cloned into the home directory by my yadm bootstrap program.
+
 ## Instructions for Using This Repository
 
 1. Install [yadm](https://yadm.io/).
@@ -13,7 +15,7 @@ These configurations are primarily intended for [KDE Plasma](https://kde.org/pla
 
 ## List of Software that Uses These Configuration Files
 
-Software marked with * will be installed by the bootstrap script of this yadm repository, otherwise the system will throw error or warning messages due to the absence of these software.
+Software marked with * will be installed by my yadm bootstrap program after cloning my yadm repository, otherwise the system will throw error or warning messages due to the absence of these software.
 
 - [Easy Effects](https://github.com/wwmm/easyeffects)
 - [Fcitx 5](https://fcitx-im.org/)
@@ -32,10 +34,6 @@ Software marked with * will be installed by the bootstrap script of this yadm re
 - [Vim](https://www.vim.org/)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)*
 - [Zsh](https://www.zsh.org/)*
-
-## Additional Setup
-
-In addition to these dot files, I have a custom setup for [Neovim](https://neovim.io/), my main editor. See [my LazyVim repository](https://git.helenchong.dev/helenchong/LazyVim) for more information.
 
 ## See Also
 
