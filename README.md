@@ -13,7 +13,18 @@ In addition to the dot files of my yadm repository, I have a custom setup for [N
 1. Install my yadm bootstrap program when prompted.
 1. Reboot the system.
 
-## List of Software that Uses These Configuration Files
+## Fonts
+
+My configuration files in this repository also change the fonts used by some software, so it is recommended to install the following fonts for the font changes to take effect:
+
+- [Intel One Mono](https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html)
+- [IntoneMono Nerd Font](https://www.nerdfonts.com/font-downloads)
+- [Readex Pro](https://fonts.google.com/specimen/Readex+Pro)
+- [Literata](https://fonts.google.com/specimen/Literata)
+
+## Software and Tools Used
+
+Below only lists software and tools that uses the configuration files in this repository. For a more comprehensive list of the hardware and software I use, check out [my /uses page](https://helenchong.dev/uses/).
 
 Software marked with * will be installed by my yadm bootstrap program after cloning my yadm repository, otherwise the system will throw error or warning messages due to the absence of these software.
 
@@ -34,7 +45,3 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 - [Vim](https://www.vim.org/)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)*
 - [Zsh](https://www.zsh.org/)*
-
-## See Also
-
-- [My /uses page](https://helenchong.dev/uses/) — A list of hardware and software I use.
