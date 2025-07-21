@@ -38,4 +38,4 @@ echo "Run nvim and follow the rest of installation instructions to finish settin
 echo "https://git.helenchong.dev/helenchong/LazyVim"
 
 echo "yadm bootstrap program executed."
-echo "Reboot your system to apply the locale changes."
+echo "Reboot your system to apply changes."
