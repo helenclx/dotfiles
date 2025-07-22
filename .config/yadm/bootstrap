@@ -11,6 +11,14 @@ sudo sed -e '/en_SG.UTF-8/s/^#*//g' -i $locale_gen_file
 sudo sed -e '/ms_MY.UTF-8/s/^#*//g' -i $locale_gen_file
 sudo locale-gen
 
+echo "Cloning the Catppuccin global theme for KDE Plasma into the Downloads folder..."
+mkdir -p Downloads && cd Downloads
+git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde && cd catppuccin-kde
+echo "Installing the Catppuccin global theme for KDE Plasma..."
+chmod +x install.sh
+./install.sh
+cd $HOME
+
 distro_id=$(lsb_release -i | cut -f 2-)
 essential_packages=('zsh' 'zoxide' 'neovim')
 install_msg="Installing essential packages for these dot files..."
