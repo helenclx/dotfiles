@@ -36,6 +36,7 @@ Software marked with * will be installed by my yadm bootstrap program after clon
         - A package for configurating Fcitx 5, such as `kcm-fcitx5`, `kde-config-fcitx5` or `fcitx5-configtool`
         - A Chinese font such as `noto-fonts-cjk` is required to display Chinese characters
         - It is strongly recommended to install `fcitx5-qt` and `fcitx5-gtk` to ensure Fcitx 5 works consistently across apps
+- [Foliate](https://johnfactotum.github.io/foliate/)
 - [FreeTube](https://freetubeapp.io/)
 - [Ghostwriter](https://ghostwriter.kde.org/)
 - [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
