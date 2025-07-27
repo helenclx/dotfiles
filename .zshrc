@@ -25,7 +25,8 @@ git_prompt() {
     [ -n "${branch}" ] && echo " (${branch})"
 }
 setopt PROMPT_SUBST
-PROMPT='%F{blue}➜ [%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{cyan}$(git_prompt)%f%F{white}%B %# %b%f'
+PROMPT='%F{blue}╭─[%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{cyan}$(git_prompt)%f
+%F{blue}╰─⮞ %f'
 
 # Set zsh options
 setopt HIST_IGNORE_SPACE
