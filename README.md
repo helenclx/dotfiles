@@ -48,3 +48,7 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 - [Vim](https://www.vim.org/)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)*
 - [Zsh](https://www.zsh.org/)*
+
+## Credits
+
+- [EasyEffects Microphone Preset: Noise Reduction + NPR Masculine Voice](https://gist.github.com/jtrv/47542c8be6345951802eebcf9dc7da31) by jtrv
