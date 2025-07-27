@@ -44,6 +44,7 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 - [KCharSelect](https://apps.kde.org/kcharselect/)
 - [Konsole](https://konsole.kde.org/)
 - [KWrite](https://apps.kde.org/kwrite/)
+- [mpv](https://mpv.io/)
 - [Neovim](https://neovim.io/)*
 - [Vim](https://www.vim.org/)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)*
