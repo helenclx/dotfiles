@@ -57,3 +57,4 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 - Easy Effects presets:
     - [Digitalone1's output presets](https://github.com/Digitalone1/EasyEffects-Presets)
     - jtrv's [microphone preset: noise reduction + NPR masculine voice](https://gist.github.com/jtrv/47542c8be6345951802eebcf9dc7da31)
+- [a11y-syntax-highlighting dark theme for Vim](https://github.com/ericwbailey/a11y-syntax-highlighting/blob/main/dist/vim/a11y-dark.vim) by Reuben L. Lillie
