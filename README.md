@@ -9,9 +9,9 @@ In addition to the dot files of my yadm repository, I have a custom setup for [N
 ## Instructions for Using This Repository
 
 1. Install [yadm](https://yadm.io/).
-1. Clone this repository with yadm into `$HOME`.
-1. Install my yadm bootstrap program when prompted.
-1. Reboot your system.
+2. Clone this repository with yadm into `$HOME`.
+3. Install my yadm bootstrap program when prompted.
+4. Reboot your system.
 
 ## Fonts
 
