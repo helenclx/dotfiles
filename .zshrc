@@ -22,7 +22,7 @@ git_prompt() {
         branch="${branch_truncated}..."
     fi
 
-    [ -n "${branch}" ] && echo "[${branch}]"
+    [ -n "${branch}" ] && echo "[git:${branch}]"
 }
 setopt PROMPT_SUBST
 PROMPT='%F{blue}╭─[%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{cyan}$(git_prompt)%f
