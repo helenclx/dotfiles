@@ -28,6 +28,10 @@ setopt PROMPT_SUBST
 PROMPT='%F{blue}╭─[%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{cyan}$(git_prompt)%f
 %F{blue}╰─⮞ %f'
 
+# Aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
 # Set zsh history options
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
