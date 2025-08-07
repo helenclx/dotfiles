@@ -30,6 +30,9 @@ PROMPT='%F{blue}╭─[%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{cyan}$(git_prompt)%f
 
 # Set zsh options
 setopt HIST_IGNORE_SPACE
+# Ignore duplicate lines and omits lines that start with space
+setopt hist_ignore_dups
+setopt hist_ignore_space
 
 # Set default editor
 export EDITOR=nvim

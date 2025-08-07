@@ -7,9 +7,10 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+# Ignore duplicate lines and omits lines that start with space
+export HISTCONTROL=ignoreboth
 # Slim shell history
 export HISTIGNORE="pwd:ls:ls -l:cd:clear"
-
 # Set default editor
 export EDITOR=nvim
 
