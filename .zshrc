@@ -28,11 +28,15 @@ setopt PROMPT_SUBST
 PROMPT='%F{blue}╭─[%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{cyan}$(git_prompt)%f
 %F{blue}╰─⮞ %f'
 
-# Set zsh options
+# Set zsh history options
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
-# Ignore duplicate lines and omits lines that start with space
-setopt hist_ignore_dups
-setopt hist_ignore_space
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_SAVE_NO_DUPS
+setopt SHARE_HISTORY
 
 # Set default editor
 export EDITOR=nvim
