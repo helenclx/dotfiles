@@ -3,6 +3,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Customise prompt
+# Default: PS1='[\u@\h \W]\$'
+PS1='[\[\033[01;34m\]\u@\h\[\033[00m\]:\[\033[01;32m\]\W\[\033[00m\]]\$ '
+
 # Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'

@@ -25,7 +25,7 @@ git_prompt() {
     [ -n "${branch}" ] && echo "[git:${branch}]"
 }
 setopt PROMPT_SUBST
-PROMPT='%F{blue}╭─[%n@%m]%f%F{green}[%(4~|...|)%3~]%f%F{cyan}$(git_prompt)%f
+PROMPT='%F{blue}╭─[%B%n@%m%b]%f%F{green}[%B%(4~|...|)%3~%b]%f%F{cyan}$(git_prompt)%f
 %F{blue}╰─⮞ %f'
 
 # Aliases
