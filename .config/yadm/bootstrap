@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Changing Bash configuration to the one in my yadm repo..."
+echo "Changing Bash configuration to the one in Helen Chong's yadm repo..."
 yadm restore .bashrc
 
 echo "Setting up the system locale..."
@@ -42,7 +42,7 @@ mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 echo "Cloning Helen Chong's LazyVim configurations..."
 git clone git@git.helenchong.dev:helenchong/LazyVim.git ~/.config/nvim
-echo "Run nvim and follow the rest of installation instructions to finish setting up Neovim:"
+echo "Follow the rest of installation instructions to finish setting up Neovim:"
 echo "https://git.helenchong.dev/helenchong/LazyVim"
 
 echo "yadm bootstrap program executed."
