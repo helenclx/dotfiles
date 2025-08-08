@@ -47,6 +47,7 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 - [mpv](https://mpv.io/)
 - [Neovim](https://neovim.io/)*
 - [Vim](https://www.vim.org/)
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)*
 - [Zsh](https://www.zsh.org/)*
 
