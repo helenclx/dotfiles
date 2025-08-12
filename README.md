@@ -39,6 +39,7 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 - [Foliate](https://johnfactotum.github.io/foliate/)
 - [FreeTube](https://freetubeapp.io/)
 - [Ghostwriter](https://ghostwriter.kde.org/)
+- [Git](https://git-scm.com/)
 - [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
 - [Kate](https://kate-editor.org/)
 - [KCharSelect](https://apps.kde.org/kcharselect/)
