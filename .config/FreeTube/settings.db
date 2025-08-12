@@ -1,5 +1,5 @@
 {"_id":"baseTheme","value":"dracula"}
-{"_id":"bounds","value":{"x":0,"y":0,"width":1200,"height":644,"maximized":true,"fullScreen":false}}
+{"_id":"bounds","value":{"x":0,"y":0,"width":1200,"height":804,"maximized":true,"fullScreen":false}}
 {"_id":"checkForBlogPosts","value":true}
 {"_id":"defaultQuality","value":"1080"}
 {"_id":"defaultViewingMode","value":"theatre"}
