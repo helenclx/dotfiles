@@ -25,14 +25,6 @@ install_msg="Installing essential packages for these dot files..."
 if [[ $distro_id == "Arch" ]]; then
     echo "$install_msg"
     sudo pacman -S zsh zoxide starship neovim
-elif [[ $distro_id == "Fedora" ]]; then
-    echo "$install_msg"
-    sudo dnf install zsh zoxide neovim
-    curl -sS https://starship.rs/install.sh | sh
-elif [[ $distro_id == "Debian" ]]; then
-    echo "$install_msg"
-    sudo apt install zsh starship neovim
-    curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 fi
 
 echo "Backing up Neovim files..."

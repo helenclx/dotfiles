@@ -2,7 +2,7 @@
 
 Configuration files for my Linux home directory, managed with [yadm](https://yadm.io/).
 
-These configurations are primarily intended for [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment. My personal computer's Linux distribution is [Arch Linux](https://archlinux.org/), but since I also use [Debian](https://www.debian.org/) on my remote servers, and have used [Fedora Linux](https://www.fedoraproject.org/), the setup of this repository supports these distros.
+These configurations are primarily intended for [Arch Linux](https://archlinux.org/) with [KkDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, since these are what I use on my personal computer daily.
 
 In addition to the dot files of my yadm repository, I have a custom setup for [Neovim](https://neovim.io/), my main editor, in a [separate repository](https://git.helenchong.dev/helenchong/LazyVim) that will be cloned into the home directory by my yadm bootstrap program.
 
