@@ -28,6 +28,9 @@ setopt SHARE_HISTORY
 # Set default editor
 export EDITOR=nvim
 
+# Add fish-style auto-suggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Export $PATH
 export PATH=$PATH:$HOME/Executables
 export PATH=$PATH:$HOME/bin
@@ -41,3 +44,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # The following lines must be added to the last line in this config file
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

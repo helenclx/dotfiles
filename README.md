@@ -26,7 +26,7 @@ My configuration files in this repository also change the fonts used by some sof
 
 Below only lists software and tools that uses the configuration files in this repository. For a more comprehensive list of the hardware and software I use, check out [my /uses page](https://helenchong.dev/uses/).
 
-Software marked with * will be installed by my yadm bootstrap program after cloning my yadm repository, otherwise the system will throw error or warning messages due to the absence of these software.
+Software marked with * will be installed by my yadm bootstrap program after cloning my yadm repository, otherwise the system may throw error or warning messages due to the absence of these software.
 
 - [bat](https://github.com/sharkdp/bat)
 - [Easy Effects](https://github.com/wwmm/easyeffects)
@@ -52,6 +52,8 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)*
 - [Zsh](https://www.zsh.org/)*
+    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)*
+    - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)*
 
 ## Credits
 
