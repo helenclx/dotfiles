@@ -20,18 +20,18 @@ chmod +x install.sh
 cd "$HOME" || return
 
 distro_id=$(lsb_release -i | cut -f 2-)
-essential_packages=('zsh' 'zoxide' 'neovim')
 install_msg="Installing essential packages for these dot files..."
 
 if [[ $distro_id == "Arch" ]]; then
     echo "$install_msg"
-    sudo pacman -S "${essential_packages[@]}"
+    sudo pacman -S zsh zoxide starship neovim
 elif [[ $distro_id == "Fedora" ]]; then
     echo "$install_msg"
-    sudo dnf install "${essential_packages[@]}"
+    sudo dnf install zsh zoxide neovim
+    curl -sS https://starship.rs/install.sh | sh
 elif [[ $distro_id == "Debian" ]]; then
     echo "$install_msg"
-    sudo apt install zsh neovim
+    sudo apt install zsh starship neovim
     curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 fi
 

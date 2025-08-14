@@ -47,6 +47,7 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 - [KWrite](https://apps.kde.org/kwrite/)
 - [mpv](https://mpv.io/)
 - [Neovim](https://neovim.io/)*
+- [Starship](https://starship.rs/)*
 - [Vim](https://www.vim.org/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)*

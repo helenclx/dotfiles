@@ -11,23 +11,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Customise my prompt
-# Git branch prompt based on:
-# https://nickjanetakis.com/blog/add-a-git-branch-to-your-prompt-with-a-few-lines-fo-shell-scriptingt
-git_prompt() {
-    local branch="$(git symbolic-ref HEAD 2> /dev/null | cut -d'/' -f3-)"
-    local branch_truncated="${branch:0:30}"
-
-    if (( ${#branch} > ${#branch_truncated} )); then
-        branch="${branch_truncated}..."
-    fi
-
-    [ -n "${branch}" ] && echo "[git:${branch}]"
-}
-setopt PROMPT_SUBST
-PROMPT='%F{blue}╭─[%B%n@%m%b]%f%F{green}[%B%(4~|...|)%3~%b]%f%F{cyan}$(git_prompt)%f
-%F{blue}╰─⮞ %f'
-
 # Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -55,6 +38,6 @@ export PATH=$PATH:$HOME/.local/share/gem/ruby/3.4.0/bin
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# zoxide
-# Must be added to the last line of this config file
+# The following lines must be added to the last line in this config file
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
