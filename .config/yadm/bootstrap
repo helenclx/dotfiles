@@ -33,9 +33,14 @@ mv ~/.local/share/nvim{,.bak}
 mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 echo "Cloning Helen Chong's LazyVim configurations..."
-git clone git@git.helenchong.dev:helenchong/LazyVim.git ~/.config/nvim
+git clone https://git.helenchong.dev/helenchong/LazyVim.git ~/.config/nvim
 echo "Follow the rest of installation instructions to finish setting up Neovim:"
 echo "https://git.helenchong.dev/helenchong/LazyVim"
+
+echo "Updating Helen Chong's yadm repo origin URL..."
+yadm remote set-url origin "git@git.helenchong.dev:helenchong/dotfiles.git"
+echo "Updating Helen Chong's LazyVim configuration repo origin URL..."
+git remote set-url origin "git@git.helenchong.dev:helenchong/LazyVim.git"
 
 echo "yadm bootstrap program executed."
 echo "Reboot your system to apply changes."
