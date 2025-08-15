@@ -2,7 +2,7 @@
 
 Configuration files for my Linux home directory, managed with [yadm](https://yadm.io/).
 
-These configurations are primarily intended for [Arch Linux](https://archlinux.org/) with [KkDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, since these are what I use on my personal computer daily.
+These configurations are intended for [Arch Linux](https://archlinux.org/) with [KkDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, since these are what I use on my personal computer daily.
 
 In addition to the dot files of my yadm repository, I have a custom setup for [Neovim](https://neovim.io/), my main editor, in a [separate repository](https://git.helenchong.dev/helenchong/LazyVim) that will be cloned into the home directory by my yadm bootstrap program.
 
@@ -30,8 +30,11 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 
 - [bat](https://github.com/sharkdp/bat)
 - [Easy Effects](https://github.com/wwmm/easyeffects)
+    - Additional dependencies:
+        - [Linux Studio Plugins](https://lsp-plug.in/) (`lsp-plugins-lv2` in Arch Linux's repository)
+        - [Calf Studio Gear](http://calf-studio-gear.org/) (`calf` in Arch Linux's repository)
 - [Fcitx 5](https://fcitx-im.org/)
-    - Additional packages:
+    - Additional dependencies:
         - [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
         - A package for configurating Fcitx 5, such as `kcm-fcitx5`, `kde-config-fcitx5` or `fcitx5-configtool`
         - A Chinese font such as `noto-fonts-cjk` is required to display Chinese characters
