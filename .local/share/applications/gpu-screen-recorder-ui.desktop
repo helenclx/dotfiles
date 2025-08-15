@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Utility
+Comment=A fullscreen overlay UI for GPU Screen Recorder in the style of ShadowPlay.
+Exec=gsr-ui %u
+GenericName=Shadow Play-like screen recorder
+Icon=gpu-screen-recorder
+Keywords=Games
+Name=GPU Screen Recorder
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
