@@ -24,7 +24,7 @@ install_msg="Installing essential packages for these dot files..."
 
 if [[ $distro_id == "Arch" ]]; then
     echo "$install_msg"
-    sudo pacman -S zsh zsh-autosuggestions zsh-syntax-highlighting zoxide starship neovim
+    sudo pacman -S fish zoxide starship neovim
 fi
 
 echo "Backing up Neovim files..."

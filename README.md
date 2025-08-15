@@ -36,6 +36,7 @@ Software marked with * will be installed by my yadm bootstrap program after clon
         - A package for configurating Fcitx 5, such as `kcm-fcitx5`, `kde-config-fcitx5` or `fcitx5-configtool`
         - A Chinese font such as `noto-fonts-cjk` is required to display Chinese characters
         - It is strongly recommended to install `fcitx5-qt` and `fcitx5-gtk` to ensure Fcitx 5 works consistently across apps
+- [Fish shell](https://fishshell.com/)*
 - [Foliate](https://johnfactotum.github.io/foliate/)
 - [FreeTube](https://freetubeapp.io/)
 - [Ghostwriter](https://ghostwriter.kde.org/)
@@ -51,9 +52,6 @@ Software marked with * will be installed by my yadm bootstrap program after clon
 - [Vim](https://www.vim.org/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)*
-- [Zsh](https://www.zsh.org/)*
-    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)*
-    - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)*
 
 ## Credits
 
