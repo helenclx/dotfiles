@@ -6,3 +6,4 @@ Font=IntoneMono Nerd Font,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Command=/usr/bin/fish
 Name=Helen
 Parent=FALLBACK/
+TerminalRows=23
