@@ -24,37 +24,38 @@ My configuration files in this repository also change the fonts used by some sof
 
 ## Software and Tools Used
 
-Below only lists software and tools that uses the configuration files in this repository. For a more comprehensive list of the hardware and software I use, check out [my /uses page](https://helenchong.dev/uses/).
+Below only lists software that uses the configuration files in this repository. For a more comprehensive list of the hardware and software I use, check out [my /uses page](https://helenchong.dev/uses/).
 
-Software marked with * will be installed by my yadm bootstrap program after cloning my yadm repository, otherwise the system may throw error or warning messages due to the absence of these software.
+My yadm bootstrap program will install these software and dependencies, except for those marked with * due to requiring manual downloads, after cloning my yadm repository. [yay](https://github.com/Jguer/yay) is my Arch User Repository (AUR) helper of choice, so the bootstrap will compile yay to install AUR packages.
 
+- [Bash](https://www.gnu.org/software/bash/)
 - [bat](https://github.com/sharkdp/bat)
 - [Easy Effects](https://github.com/wwmm/easyeffects)
-    - Additional dependencies:
-        - [Linux Studio Plugins](https://lsp-plug.in/) (`lsp-plugins-lv2` in Arch Linux's repository)
-        - [Calf Studio Gear](http://calf-studio-gear.org/) (`calf` in Arch Linux's repository)
+    - [Linux Studio Plugins](https://lsp-plug.in/) (`lsp-plugins-lv2` in Arch Linux's repository)
+    - [Calf Studio Gear](http://calf-studio-gear.org/) (`calf` in Arch Linux's repository)
 - [Fcitx 5](https://fcitx-im.org/)
-    - Additional dependencies:
-        - [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
-        - A package for configurating Fcitx 5, such as `kcm-fcitx5`, `kde-config-fcitx5` or `fcitx5-configtool`
-        - A Chinese font such as `noto-fonts-cjk` is required to display Chinese characters
-        - It is strongly recommended to install `fcitx5-qt` and `fcitx5-gtk` to ensure Fcitx 5 works consistently across apps
-- [Fish shell](https://fishshell.com/)*
+    - [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
+    - [fcitx5-configtool](https://github.com/fcitx/fcitx5-configtool)
+    - [fcitx5-qt](https://github.com/fcitx/fcitx5-qt) and [fcitx5-gtk](https://github.com/fcitx/fcitx5-gtk) — required to make Fcitx 5 work across various apps
+    - [Noto CJK fonts](https://github.com/notofonts/noto-cjk) (`noto-fonts-cjk` in Arch Linux's repository) — required for displaying Chinese characters
+- [Fish shell](https://fishshell.com/)
 - [Foliate](https://johnfactotum.github.io/foliate/)
-- [FreeTube](https://freetubeapp.io/)
+- [FreeTube](https://freetubeapp.io/)*
 - [Ghostwriter](https://ghostwriter.kde.org/)
 - [Git](https://git-scm.com/)
 - [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
+    - Install `gpu-screen-recorder` and `gpu-screen-recorder-ui` from AUR
 - [Kate](https://kate-editor.org/)
 - [KCharSelect](https://apps.kde.org/kcharselect/)
 - [Konsole](https://konsole.kde.org/)
 - [KWrite](https://apps.kde.org/kwrite/)
 - [mpv](https://mpv.io/)
-- [Neovim](https://neovim.io/)*
-- [Starship](https://starship.rs/)*
+    - [mpv-mpris](https://github.com/hoyon/mpv-mpris)
+- [Neovim](https://neovim.io/)
+- [Starship](https://starship.rs/)
 - [Vim](https://www.vim.org/)
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-- [Zoxide](https://github.com/ajeetdsouza/zoxide)*
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed with [pipx](https://github.com/pypa/pipx))
+- [Zoxide](https://github.com/ajeetdsouza/zoxide)
 
 ## Credits
 

@@ -11,8 +11,20 @@ sudo sed -e '/en_SG.UTF-8/s/^#*//g' -i $locale_gen_file
 sudo sed -e '/ms_MY.UTF-8/s/^#*//g' -i $locale_gen_file
 sudo locale-gen
 
-echo "Installing essential packages for these dot files..."
-sudo pacman -S unzip fish zoxide starship neovim
+echo "Installing software for these configuration files..."
+echo "Installing packages from Arch Linux's repository..."
+sudo pacman -S --needed bat easyeffects lsp-plugins-lv2 calf fcitx5 fcitx5-chinese-addons fcitx5-qt fcitx5-gtk fcitx5-configtool noto-fonts-cjk fish foliate ghostwriter kate kcharselect mpv mpv-mpris neovim starship vim python python-pipx zoxide unzip
+
+echo "Compiling yay..."
+sudo pacman -S --needed git base-devel
+mkdir -p Downloads && cd Downloads || return
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd "$HOME" || return
+
+echo "Installing AUR packages for these config files..."
+yay -S gpu-screen-recorder gpu-screen-recorder-ui
 
 echo "Cloning the Catppuccin global theme for KDE Plasma into the Downloads folder..."
 mkdir -p Downloads && cd Downloads || return
@@ -40,4 +52,5 @@ git remote set-url origin "git@git.helenchong.dev:helenchong/LazyVim.git"
 cd "$HOME"
 
 echo "yadm bootstrap program executed."
-echo "Reboot your system to apply changes."
+echo "To complete the setup, set 'Helen' as the default Konsole profile, and select Fcitx 5 as the virtual keyboard in the system settings."
+echo "Finally, reboot your system to apply changes."
