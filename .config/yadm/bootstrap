@@ -1,48 +1,32 @@
 #!/usr/bin/env bash
 
+bootstrap_dir="$HOME/.config/yadm/bootstrap.d"
+
+echo "Creating bootstrap logs directory..."
+bootstrap_log_dir="$HOME/bootstrap-logs"
+mkdir -p "$bootstrap_log_dir"
+
 echo "Changing Bash configuration to the one in Helen Chong's yadm repo..."
 yadm restore .bashrc
 
 echo "Setting up the system locale..."
-locale_gen_file=/etc/locale.gen
-# Reference: https://gist.github.com/le0me55i/e1f2244cdc0d64d8e541378357543b15
-sudo sed -e '/en_GB.UTF-8/s/^#*//g' -i $locale_gen_file
-sudo sed -e '/en_SG.UTF-8/s/^#*//g' -i $locale_gen_file
-sudo sed -e '/ms_MY.UTF-8/s/^#*//g' -i $locale_gen_file
-sudo locale-gen
+bash "$bootstrap_dir/locale.sh" >"$bootstrap_log_dir/locale.log"
 
 echo "Installing software for these configuration files..."
 echo "Installing packages from Arch Linux's repository..."
-sudo pacman -S --needed bat easyeffects lsp-plugins-lv2 calf fcitx5 fcitx5-chinese-addons fcitx5-qt fcitx5-gtk fcitx5-configtool noto-fonts-cjk fish foliate ghostwriter kate kcharselect mpv mpv-mpris neovim starship vim python python-pipx zoxide unzip
+bash "$bootstrap_dir/pacman.sh" >"$bootstrap_log_dir/pacman.log"
 
 echo "Compiling yay..."
-sudo pacman -S --needed git base-devel
-mkdir -p Downloads && cd Downloads || return
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd "$HOME" || return
+bash "$bootstrap_dir/yay.sh" >"$bootstrap_log_dir/yay.log"
 
 echo "Installing AUR packages for these config files..."
-yay -S gpu-screen-recorder gpu-screen-recorder-ui
+yay -S gpu-screen-recorder gpu-screen-recorder-ui >"$bootstrap_log_dir/gpu-screen-recorder.log"
 
 echo "Cloning the Catppuccin global theme for KDE Plasma into the Downloads folder..."
-mkdir -p Downloads && cd Downloads || return
-git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde && cd catppuccin-kde || return
-echo "Installing the Catppuccin global theme for KDE Plasma..."
-chmod +x install.sh
-./install.sh
-cd "$HOME" || return
+bash "$bootstrap_dir/catppuccin.sh" >"$bootstrap_log_dir/catppuccin.log"
 
-echo "Backing up Neovim files..."
-mv ~/.config/nvim{,.bak}
-mv ~/.local/share/nvim{,.bak}
-mv ~/.local/state/nvim{,.bak}
-mv ~/.cache/nvim{,.bak}
-echo "Cloning Helen Chong's LazyVim configurations..."
-git clone https://git.helenchong.dev/helenchong/LazyVim.git ~/.config/nvim
-echo "Follow the rest of installation instructions to finish setting up Neovim:"
-echo "https://git.helenchong.dev/helenchong/LazyVim"
+echo "Setting up Neovim..."
+bash "$bootstrap_dir/neovim.sh" >"$bootstrap_log_dir/neovim.log"
 
 echo "Updating Helen Chong's yadm repo origin URL..."
 yadm remote set-url origin "git@git.helenchong.dev:helenchong/dotfiles.git"
@@ -51,6 +35,6 @@ cd "$HOME/.config/nvim" || return
 git remote set-url origin "git@git.helenchong.dev:helenchong/LazyVim.git"
 cd "$HOME"
 
-echo "yadm bootstrap program executed."
-echo "To complete the setup, set 'Helen' as the default Konsole profile, and select Fcitx 5 as the virtual keyboard in the system settings."
+echo "yadm bootstrap program executed. Check out $bootstrap_log_dir for logs."
+echo "To complete the setup, select Fcitx 5 as the virtual keyboard in the system settings."
 echo "Finally, reboot your system to apply changes."
