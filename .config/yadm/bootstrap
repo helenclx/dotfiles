@@ -11,6 +11,9 @@ sudo sed -e '/en_SG.UTF-8/s/^#*//g' -i $locale_gen_file
 sudo sed -e '/ms_MY.UTF-8/s/^#*//g' -i $locale_gen_file
 sudo locale-gen
 
+echo "Installing essential packages for these dot files..."
+sudo pacman -S unzip fish zoxide starship neovim
+
 echo "Cloning the Catppuccin global theme for KDE Plasma into the Downloads folder..."
 mkdir -p Downloads && cd Downloads || return
 git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde && cd catppuccin-kde || return
@@ -18,9 +21,6 @@ echo "Installing the Catppuccin global theme for KDE Plasma..."
 chmod +x install.sh
 ./install.sh
 cd "$HOME" || return
-
-echo "Installing essential packages for these dot files..."
-sudo pacman -S fish zoxide starship neovim
 
 echo "Backing up Neovim files..."
 mv ~/.config/nvim{,.bak}
