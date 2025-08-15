@@ -40,7 +40,9 @@ echo "https://git.helenchong.dev/helenchong/LazyVim"
 echo "Updating Helen Chong's yadm repo origin URL..."
 yadm remote set-url origin "git@git.helenchong.dev:helenchong/dotfiles.git"
 echo "Updating Helen Chong's LazyVim configuration repo origin URL..."
+cd "$HOME/.config/nvim" || return
 git remote set-url origin "git@git.helenchong.dev:helenchong/LazyVim.git"
+cd "$HOME"
 
 echo "yadm bootstrap program executed."
 echo "Reboot your system to apply changes."
