@@ -19,13 +19,8 @@ chmod +x install.sh
 ./install.sh
 cd "$HOME" || return
 
-distro_id=$(lsb_release -i | cut -f 2-)
-install_msg="Installing essential packages for these dot files..."
-
-if [[ $distro_id == "Arch" ]]; then
-    echo "$install_msg"
-    sudo pacman -S fish zoxide starship neovim
-fi
+echo "Installing essential packages for these dot files..."
+sudo pacman -S fish zoxide starship neovim
 
 echo "Backing up Neovim files..."
 mv ~/.config/nvim{,.bak}
