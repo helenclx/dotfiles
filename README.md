@@ -59,9 +59,7 @@ My yadm bootstrap program will install these software and dependencies, except f
 
 ## Credits
 
-- Colour schemes:
-    - [Catppuccin](https://catppuccin.com/)
-    - [Dracula](https://draculatheme.com/)
+- [Catppuccin](https://catppuccin.com/) colour scheme
 - Easy Effects presets:
     - [Digitalone1's output presets](https://github.com/Digitalone1/EasyEffects-Presets)
     - jtrv's [microphone preset: noise reduction + NPR masculine voice](https://gist.github.com/jtrv/47542c8be6345951802eebcf9dc7da31)
