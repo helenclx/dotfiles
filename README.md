@@ -53,6 +53,7 @@ My yadm bootstrap program will install these software and dependencies, except f
     - [mpv-mpris](https://github.com/hoyon/mpv-mpris)
 - [Neovim](https://neovim.io/)
 - [Starship](https://starship.rs/)
+- [tmux](https://github.com/tmux/tmux/wiki)
 - [Vim](https://www.vim.org/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed with [pipx](https://github.com/pypa/pipx))
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
