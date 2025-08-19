@@ -22,8 +22,11 @@ bash "$bootstrap_dir/yay.sh" >"$bootstrap_log_dir/yay.log"
 echo "Installing AUR packages for these config files..."
 yay -S gpu-screen-recorder gpu-screen-recorder-ui >"$bootstrap_log_dir/gpu-screen-recorder.log"
 
-echo "Cloning the Catppuccin global theme for KDE Plasma into the Downloads folder..."
-bash "$bootstrap_dir/catppuccin.sh" >"$bootstrap_log_dir/catppuccin.log"
+echo "Setting up the Catppuccin global theme for KDE Plasma..."
+bash "$bootstrap_dir/catppuccin-kde.sh" >"$bootstrap_log_dir/catppuccin-kde.log"
+
+echo "Setting up the Catppuccin theme for tmux..."
+bash "$bootstrap_dir/catppuccin-tmux.sh" >"$bootstrap_log_dir/catppuccin-tmux.log"
 
 echo "Setting up Neovim..."
 bash "$bootstrap_dir/neovim.sh" >"$bootstrap_log_dir/neovim.log"
@@ -33,7 +36,7 @@ yadm remote set-url origin "git@git.helenchong.dev:helenchong/dotfiles.git"
 echo "Updating Helen Chong's LazyVim configuration repo origin URL..."
 cd "$HOME/.config/nvim" || return
 git remote set-url origin "git@git.helenchong.dev:helenchong/LazyVim.git"
-cd "$HOME"
+cd "$HOME" || return
 
 echo "yadm bootstrap program executed. Check out $bootstrap_log_dir for logs."
 echo "To complete the setup, select Fcitx 5 as the virtual keyboard in the system settings."
