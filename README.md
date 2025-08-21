@@ -2,9 +2,9 @@
 
 Configuration files for my Linux home directory, managed with [yadm](https://yadm.io/).
 
-These configurations are intended for [Arch Linux](https://archlinux.org/) with [KkDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, since these are what I use on my personal computer daily.
+These configurations are intended for [Arch Linux](https://archlinux.org/) with [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, since these are what I use on my personal computer daily.
 
-In addition to the dot files of my yadm repository, I have a custom setup for [Neovim](https://neovim.io/), my main editor, in a [separate repository](https://git.helenchong.dev/helenchong/LazyVim) that will be cloned into the home directory by my yadm bootstrap program.
+In addition to the dot files of my yadm repository, I have a custom setup for [Neovim](https://neovim.io/), my main code editor, in a [separate Git repository](https://git.helenchong.dev/helenchong/LazyVim) that will be cloned into the home directory by my yadm bootstrap program.
 
 ## Instructions for Using This Repository
 
@@ -26,7 +26,7 @@ My configuration files in this repository also change the fonts used by some sof
 
 Below only lists software that uses the configuration files in this repository. For a more comprehensive list of the hardware and software I use, check out [my /uses page](https://helenchong.dev/uses/).
 
-My yadm bootstrap program will install these software and dependencies, except for those marked with * due to requiring manual downloads, after cloning my yadm repository. [yay](https://github.com/Jguer/yay) is my Arch User Repository (AUR) helper of choice, so the bootstrap will compile yay to install AUR packages.
+My yadm bootstrap program will install these software and dependencies after cloning my yadm repository, except for those marked with * due to requiring manual downloads. [yay](https://github.com/Jguer/yay) is my Arch User Repository (AUR) helper of choice, so my yadm bootstrap program will compile yay to install AUR packages.
 
 - [Bash](https://www.gnu.org/software/bash/)
 - [bat](https://github.com/sharkdp/bat)
@@ -65,4 +65,4 @@ My yadm bootstrap program will install these software and dependencies, except f
     - [Digitalone1's output presets](https://github.com/Digitalone1/EasyEffects-Presets)
     - jtrv's [microphone preset: noise reduction + NPR masculine voice](https://gist.github.com/jtrv/47542c8be6345951802eebcf9dc7da31)
 - [mpv_sponsorblock_minimal](https://codeberg.org/jouni/mpv_sponsorblock_minimal) by jouni
-- [a11y-syntax-highlighting dark theme for Vim](https://github.com/ericwbailey/a11y-syntax-highlighting/blob/main/dist/vim/a11y-dark.vim) by Reuben L. Lillie
+- [a11y-dark colour scheme for Vim](https://github.com/ericwbailey/a11y-syntax-highlighting/blob/main/dist/vim/a11y-dark.vim) by Reuben L. Lillie
