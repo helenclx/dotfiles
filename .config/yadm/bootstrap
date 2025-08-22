@@ -3,7 +3,7 @@
 bootstrap_dir="$HOME/.config/yadm/bootstrap.d"
 
 echo "Creating bootstrap logs directory..."
-bootstrap_log_dir="$HOME/bootstrap-logs"
+bootstrap_log_dir="$HOME/yadm-bootstrap-logs"
 mkdir -p "$bootstrap_log_dir"
 
 echo "Changing Bash configuration to the one in Helen Chong's yadm repo..."
