@@ -14,10 +14,12 @@ export HISTIGNORE="pwd:ls:ls -l:cd:clear"
 # Set default editor
 export EDITOR=nvim
 
-# bun
+# Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# The following lines must be added to the last line in this config file
-eval "$(zoxide init bash)"
+# Integrate certain programs into the shell
+eval "$(fzf --bash)"
+# The following lines must be added to the end of this config file
 eval "$(starship init bash)"
+eval "$(zoxide init bash)"

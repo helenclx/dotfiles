@@ -41,6 +41,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Fish shell](https://fishshell.com/)
 - [Foliate](https://johnfactotum.github.io/foliate/)
 - [FreeTube](https://freetubeapp.io/)*
+- [fzf](https://github.com/junegunn/fzf)
 - [Ghostwriter](https://ghostwriter.kde.org/)
 - [Git](https://git-scm.com/)
 - [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
