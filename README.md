@@ -52,6 +52,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [KCharSelect](https://apps.kde.org/kcharselect/)
 - [Konsole](https://konsole.kde.org/)
 - [KWrite](https://apps.kde.org/kwrite/)
+- [lazygit](https://github.com/jesseduffield/lazygit)
 - [mpv](https://mpv.io/)
     - [mpv-mpris](https://github.com/hoyon/mpv-mpris)
 - [Neovim](https://neovim.io/)
