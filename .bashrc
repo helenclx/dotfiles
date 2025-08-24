@@ -11,8 +11,6 @@ alias grep='grep --color=auto'
 export HISTCONTROL=ignoreboth
 # Slim shell history
 export HISTIGNORE="pwd:ls:ls -l:cd:clear"
-# Set default editor
-export EDITOR=nvim
 
 # Source all scripts in ~/.bashrc.d/
 if [ -d "$HOME/.bashrc.d" ]; then
