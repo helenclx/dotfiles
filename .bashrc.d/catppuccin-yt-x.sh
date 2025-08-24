@@ -1,0 +1,1 @@
+export YT_X_FZF_OPTS=$FZF_DEFAULT_OPTS

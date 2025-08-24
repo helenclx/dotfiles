@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Export $PATH
 export PATH="$PATH:$HOME/Executables"
 export PATH="$PATH:$HOME/bin"

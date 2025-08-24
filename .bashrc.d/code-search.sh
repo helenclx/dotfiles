@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Code search interface function with ripgrep, fzf and bat
 # Reference: https://junegunn.github.io/fzf/tips/ripgrep-integration/
 rg-fzf() (

@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Set default editor
 export EDITOR=nvim
 # Set ripgrep config location
