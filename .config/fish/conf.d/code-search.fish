@@ -3,7 +3,7 @@
 function rg-fzf
     set RELOAD 'reload:rg --column --color=always --smart-case {q} || :'
     set OPENER 'if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
-        $EDITOR {1} +{2}  # No selection. Open the current line in the default editor. 
+        $EDITOR {1} +{2}         # No selection. Open the current line in the default editor. 
         else
             $EDITOR +cw -q {+f}  # Build quickfix list for the selected items.
         fi'
