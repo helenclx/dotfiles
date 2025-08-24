@@ -34,6 +34,7 @@ My yadm bootstrap program will install these software and dependencies after clo
     - [Linux Studio Plugins](https://lsp-plug.in/) (`lsp-plugins-lv2` in Arch Linux's repository)
     - [Calf Studio Gear](http://calf-studio-gear.org/) (`calf` in Arch Linux's repository)
 - [Elisa](https://apps.kde.org/elisa/)
+- [eza](https://github.com/eza-community/eza)
 - [Fcitx 5](https://fcitx-im.org/)
     - [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
     - [fcitx5-configtool](https://github.com/fcitx/fcitx5-configtool)
