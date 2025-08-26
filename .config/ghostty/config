@@ -1,0 +1,12 @@
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+command = fish
+font-family = IntOneMono Nerd Font
+theme = catppuccin-mocha
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
