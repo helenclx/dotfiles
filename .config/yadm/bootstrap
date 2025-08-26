@@ -30,6 +30,9 @@ bash "$bootstrap_dir/catppuccin-kde.sh" >"$bootstrap_log_dir/catppuccin-kde.log"
 echo "Setting up the Catppuccin theme for tmux..."
 bash "$bootstrap_dir/catppuccin-tmux.sh" >"$bootstrap_log_dir/catppuccin-tmux.log"
 
+echo "Updating bat's binary cache to apply the Catppuccin Mocha theme..."
+bat cache --build
+
 echo "Setting up Neovim..."
 bash "$bootstrap_dir/neovim.sh" >"$bootstrap_log_dir/neovim.log"
 
