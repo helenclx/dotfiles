@@ -6,4 +6,5 @@ Font=IntoneMono Nerd Font,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Command=/usr/bin/fish
 Name=Breeze
 Parent=FALLBACK/
-TerminalRows=23
+TerminalColumns=90
+TerminalRows=24
