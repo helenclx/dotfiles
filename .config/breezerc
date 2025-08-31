@@ -1,2 +1,6 @@
 [Common]
+OutlineCloseButton=true
 OutlineIntensity=OutlineHigh
+
+[Windeco]
+DrawBorderOnMaximizedWindows=true
