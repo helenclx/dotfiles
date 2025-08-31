@@ -1,0 +1,7 @@
+[Global]
+LookAndFeelSet=Catppuccin-Mocha-Mauve
+
+[Windeco]
+BoldButtonIcons=BoldIconsBold
+ButtonIconStyle=StyleOxygen
+IconSize=IconMedium
