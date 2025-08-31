@@ -22,6 +22,12 @@ My configuration files in this repository also change the fonts used by some sof
 - [Readex Pro](https://fonts.google.com/specimen/Readex+Pro)
 - [Literata](https://fonts.google.com/specimen/Literata)
 
+## Theming
+
+I use [Catppuccin](https://catppuccin.com/) as the default colour scheme of most programs I use, so my dotfiles also involve styling various programs with Catppuccin.
+
+For my KDE Plasma desktop environment, I use [Catppuccin](https://github.com/catppuccin/kde) as the global theme, which will be installed by my yadm bootstrap program. However, for window decorations, I use [Klassy](https://github.com/paulmcauley/klassy), with my own configuration that is also included in this repository.
+
 ## Software and Tools Used
 
 Below only lists software that uses the configuration files in this repository. For a more comprehensive list of the hardware and software I use, check out [my /uses page](https://helenchong.dev/uses/).
