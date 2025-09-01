@@ -41,7 +41,7 @@ Color Theme=Catppuccin Mocha
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
-Text Font=Intel One Mono,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font=Monospace,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Text Font Features=
 Word Wrap Marker=false
 
