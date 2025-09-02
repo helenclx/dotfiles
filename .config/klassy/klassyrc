@@ -1,7 +1,7 @@
 [ButtonColors]
-ButtonOverrideColorsActiveClose={"BackgroundHover":[243,139,168],"IconHover":["TitleBarBackgroundAuto"],"IconNormal":[243,139,168],"OutlineHover":[243,139,168],"OutlinePress":[243,139,168]}
-ButtonOverrideColorsActiveMaximize={"BackgroundHover":[166,227,161],"IconNormal":[166,227,161],"OutlineHover":[166,227,161]}
-ButtonOverrideColorsActiveMinimize={"BackgroundHover":[249,226,175],"IconNormal":[249,226,175],"OutlineHover":[249,226,175]}
+ButtonOverrideColorsActiveClose={"BackgroundHover":[243,139,168],"BackgroundPress":[70,243,139,168],"IconHover":["TitleBarBackgroundAuto"],"IconNormal":[243,139,168],"IconPress":["TitleBarBackgroundAuto"],"OutlineHover":[243,139,168],"OutlinePress":[243,139,168]}
+ButtonOverrideColorsActiveMaximize={"BackgroundHover":[166,227,161],"BackgroundPress":[70,166,227,161],"IconNormal":[166,227,161],"OutlineHover":[166,227,161]}
+ButtonOverrideColorsActiveMinimize={"BackgroundHover":[249,226,175],"BackgroundPress":[70,249,226,175],"IconNormal":[249,226,175],"OutlineHover":[249,226,175]}
 
 [Global]
 LookAndFeelSet=Catppuccin-Mocha-Mauve
