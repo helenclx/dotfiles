@@ -8,3 +8,6 @@ Name=Helen
 Parent=FALLBACK/
 TerminalColumns=97
 TerminalRows=24
+
+[Scrolling]
+HistorySize=2000
