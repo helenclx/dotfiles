@@ -15,7 +15,7 @@ In addition to the dot files of my yadm repository, I have a custom setup for [N
 
 ## Fonts
 
-My configuration files in this repository also change the fonts used by some software, so it is recommended to install the following fonts, then reboot your system for the font changes to take effect:
+My configuration files in this repository also change system fonts and fonts used by certain software, so it is recommended to install the following fonts, then reboot your system for the font changes to take effect:
 
 - [Intel One Mono](https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html)
 - [IntoneMono Nerd Font](https://www.nerdfonts.com/font-downloads)
