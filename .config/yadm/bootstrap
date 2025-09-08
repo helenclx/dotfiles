@@ -6,8 +6,8 @@ echo "Creating bootstrap logs directory..."
 bootstrap_log_dir="$HOME/yadm-bootstrap-logs"
 mkdir -p "$bootstrap_log_dir"
 
-echo "Changing Bash configuration to the one in Helen Chong's yadm repo..."
-yadm restore .bashrc
+echo "Changing configurations to the one in Helen Chong's yadm repo..."
+yadm restore .
 
 echo "Setting up the system locale..."
 bash "$bootstrap_dir/locale.sh" 2>&1 | tee "$bootstrap_log_dir/locale.log"
