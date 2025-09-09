@@ -63,6 +63,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [mpv](https://mpv.io/)
     - [mpv-mpris](https://github.com/hoyon/mpv-mpris)
 - [Neovim](https://neovim.io/)
+- [ranger](https://ranger.fm/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Starship](https://starship.rs/)
 - [tmux](https://github.com/tmux/tmux/wiki)
