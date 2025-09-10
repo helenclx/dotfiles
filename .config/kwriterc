@@ -106,7 +106,3 @@ Vi Relative Line Numbers=false
 Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
-
-[MainWindow]
-1280x720 screen: Height=492
-1280x720 screen: Width=809
