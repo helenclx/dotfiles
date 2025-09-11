@@ -1,0 +1,81 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "small",
+        "padding": {
+            "top": 1,
+            "right": 2
+        }
+    },
+    "display": {
+        "separator": "  ",
+        "color": {
+            "separator": "red"
+        },
+        "constants": [
+            "───────────────────────────────────────────────────────────────────────────",
+            "│\u001b[75C│\u001b[75D"
+        ]
+    },
+    "modules": [
+        {
+            "format": "{#1}{#keys}╭{$1}╮\u001b[76D {user-name-colored}{at-symbol-colored}{host-name-colored} 🖥  ",
+            "type": "title"
+        },
+        {
+            "key": "{$2}{#31}{icon} Distro     ",
+            "type": "os"
+        },
+        {
+            "key": "{$2}{#32}󰇄 Desktop    ",
+            "type": "de"
+        },
+        {
+            "key": "{$2}{#33} KDE Theme  ",
+            "type": "theme",
+            "format": "{1}"
+        },
+        {
+            "key": "{$2}{#34} WM         ",
+            "type": "wm"
+        },
+        {
+            "key": "{$2}{#35} WM Theme   ",
+            "type": "wmtheme"
+        },
+        {
+            "key": "{$2}{#36} Icons      ",
+            "type": "icons",
+            "format": "{1}"
+        },
+        {
+            "key": "{$2}{#35}󰆿 Cursor     ",
+            "type": "cursor"
+        },
+        {
+            "key": "{$2}{#34} Terminal   ",
+            "type": "terminal"
+        },
+        {
+            "key": "{$2}{#33} Term Font  ",
+            "type": "terminalfont"
+        },
+        {
+            "key": "{$2}{#32} Shell      ",
+            "type": "shell"
+        },
+        {
+            "format": "{#1}{#keys}├{$1}┤",
+            "type": "custom"
+        },
+        {
+            "key": "{$2}{#39} Colours    ",
+            "type": "colors",
+            "symbol": "circle"
+        },
+        {
+            "format": "{#1}{#keys}╰{$1}╯",
+            "type": "custom"
+        }
+    ]
+}
