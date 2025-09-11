@@ -32,8 +32,6 @@
       "key": "Resolution"
     },
     "de",
-    "wm",
-    "wmtheme",
     {
       "type": "theme",
       "format": "{1}"
@@ -42,6 +40,8 @@
       "type": "icons",
       "format": "{1}"
     },
+    "wm",
+    "wmtheme",
     "terminal",
     "terminalfont",
     "cpu",
