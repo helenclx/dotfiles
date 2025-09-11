@@ -43,10 +43,7 @@
       "format": "{1}"
     },
     "terminal",
-    {
-      "type": "terminalfont",
-      "format": "{/name}{-}{/}{name}{?size} {size}{?}"
-    },
+    "terminalfont",
     "cpu",
     {
       "type": "gpu",
