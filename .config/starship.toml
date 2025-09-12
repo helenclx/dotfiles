@@ -16,7 +16,6 @@ $c\
 $rust\
 $golang\
 $nodejs\
-$bun\
 $php\
 $java\
 $kotlin\
@@ -95,11 +94,6 @@ format = '[[($all_status$ahead_behind )](fg:crust bg:green)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:lavender"
-format = '[[ $symbol( $version) ](fg:crust bg:lavender)]($style)'
-
-[bun]
-symbol = ""
 style = "bg:lavender"
 format = '[[ $symbol( $version) ](fg:crust bg:lavender)]($style)'
 
