@@ -1,2 +1,14 @@
 [updates]
 auto_update = true
+
+[style.command_name]
+foreground = "blue"
+
+[style.example_text]
+foreground = "yellow"
+
+[style.example_code]
+foreground = "green"
+
+[style.example_variable]
+foreground = "red"
