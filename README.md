@@ -55,6 +55,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Git](https://git-scm.com/)
 - [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
     - Install `gpu-screen-recorder` and `gpu-screen-recorder-ui` from AUR
+- [hyfetch](https://github.com/hykilpikonna/hyfetch)
 - [Kate](https://kate-editor.org/)
 - [KCharSelect](https://apps.kde.org/kcharselect/)
 - [kitty](https://sw.kovidgoyal.net/kitty/)
