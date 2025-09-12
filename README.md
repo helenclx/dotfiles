@@ -67,6 +67,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [ranger](https://ranger.fm/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Starship](https://starship.rs/)
+- [tealdeer](https://github.com/tealdeer-rs/tealdeer)
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [Vim](https://www.vim.org/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed with [pipx](https://github.com/pypa/pipx))
