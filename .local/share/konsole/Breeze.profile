@@ -7,7 +7,7 @@ Command=/usr/bin/fish
 Name=Breeze
 Parent=FALLBACK/
 TerminalColumns=97
-TerminalRows=24
+TerminalRows=25
 
 [Scrolling]
 HistorySize=2000
