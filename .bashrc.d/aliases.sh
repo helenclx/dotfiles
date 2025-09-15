@@ -1,5 +1,6 @@
 alias bathelp='bat --plain --language=help'
 alias eza='eza --icons=auto'
+alias fd='fd --hidden'
 alias grep='grep --color=auto'
 alias icat='kitten icat'
 alias ls='ls --color=auto'
