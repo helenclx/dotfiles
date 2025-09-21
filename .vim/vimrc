@@ -9,4 +9,4 @@ set tabstop=4 shiftwidth=4
 color a11y-dark
 
 " Set default shell for the built-in terminal
-set shell=/usr/bin/zsh
+set shell=/usr/bin/fish
