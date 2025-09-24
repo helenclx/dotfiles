@@ -1,10 +1,12 @@
 {"_id":"baseTheme","value":"catppuccinMocha"}
-{"_id":"bounds","value":{"x":0,"y":0,"width":1200,"height":804,"maximized":true,"fullScreen":false}}
+{"_id":"bounds","value":{"x":0,"y":28,"width":1200,"height":804,"maximized":true,"fullScreen":false}}
 {"_id":"checkForBlogPosts","value":true}
 {"_id":"defaultQuality","value":"1080"}
 {"_id":"defaultViewingMode","value":"theatre"}
+{"_id":"enableScreenshot","value":true}
 {"_id":"enableSearchSuggestions","value":false}
 {"_id":"enableSubtitlesByDefault","value":true}
+{"_id":"externalPlayer","value":"mpv"}
 {"_id":"hidePopularVideos","value":true}
 {"_id":"hideRecommendedVideos","value":true}
 {"_id":"hideTrendingVideos","value":true}
