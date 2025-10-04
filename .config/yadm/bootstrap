@@ -16,10 +16,10 @@ echo "Installing software for these configuration files..."
 echo "Installing packages from Arch Linux's repository..."
 bash "$bootstrap_dir/pacman.sh" 2>&1 | tee "$bootstrap_log_dir/pacman.log"
 
-echo "Compiling yay..."
-bash "$bootstrap_dir/yay.sh" >"$bootstrap_log_dir/yay.log"
+echo "Compiling paru, the AUR helper..."
+bash "$bootstrap_dir/paru.sh" >"$bootstrap_log_dir/paru.log"
 echo "Installing AUR packages for these config files..."
-yay -S gpu-screen-recorder gpu-screen-recorder-ui 2>&1 | tee "$bootstrap_log_dir/gpu-screen-recorder.log"
+paru -S gpu-screen-recorder gpu-screen-recorder-ui 2>&1 | tee "$bootstrap_log_dir/gpu-screen-recorder.log"
 
 echo "Installing additional software from outside Arch Linux's repo and AUR..."
 bash "$bootstrap_dir/extra-software.sh" 2>&1 | tee "$bootstrap_log_dir/extra-software.log"
