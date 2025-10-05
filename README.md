@@ -64,8 +64,6 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [mpv](https://mpv.io/)
     - [mpv-mpris](https://github.com/hoyon/mpv-mpris)
-    - [uosc](https://github.com/tomasklaen/uosc)
-    - [thumbfast](https://github.com/po5/thumbfast)
 - [Neovim](https://neovim.io/)
 - [ranger](https://ranger.fm/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -83,5 +81,8 @@ My yadm bootstrap program will install these software and dependencies after clo
 - Easy Effects presets:
     - [Digitalone1's output presets](https://github.com/Digitalone1/EasyEffects-Presets)
     - jtrv's [microphone preset: noise reduction + NPR masculine voice](https://gist.github.com/jtrv/47542c8be6345951802eebcf9dc7da31)
-- [mpv_sponsorblock_minimal](https://codeberg.org/jouni/mpv_sponsorblock_minimal) by jouni
+- mpv scripts:
+    - [mpv_sponsorblock_minimal](https://codeberg.org/jouni/mpv_sponsorblock_minimal) by jouni
+    - [uosc](https://github.com/tomasklaen/uosc) by Tomas Klaen
+    - [thumbfast](https://github.com/po5/thumbfast) by po5
 - [a11y-dark colour scheme for Vim](https://github.com/ericwbailey/a11y-syntax-highlighting/blob/main/dist/vim/a11y-dark.vim) by Reuben L. Lillie
