@@ -1,4 +1,5 @@
-# Set default editor
+# Set default apps
+export BROWSER=firefox
 export EDITOR=nvim
 
 # syntax highlighting for the less program
