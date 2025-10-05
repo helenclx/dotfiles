@@ -33,6 +33,9 @@ bash "$bootstrap_dir/catppuccin-tmux.sh" 2>&1 | tee "$bootstrap_log_dir/catppucc
 echo "Updating bat's binary cache to apply the Catppuccin Mocha theme..."
 bat cache --build
 
+echo "Installing plugins for MPV player..."
+bash "$bootstrap_dir/mpv.sh" 2>&1 | tee "$bootstrap_log_dir/mpv.log"
+
 echo "Setting up Neovim..."
 bash "$bootstrap_dir/neovim.sh" 2>&1 | tee "$bootstrap_log_dir/neovim.log"
 
