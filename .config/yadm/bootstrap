@@ -2,6 +2,11 @@
 
 bootstrap_dir="$HOME/.config/yadm/bootstrap.d"
 
+log_bootstrap() {
+    local script=$1
+    bash "$bootstrap_dir/$script.sh" 2>&1 | tee "$bootstrap_log_dir/$script.log"
+}
+
 echo "Creating bootstrap logs directory..."
 bootstrap_log_dir="$HOME/yadm-bootstrap-logs"
 mkdir -p "$bootstrap_log_dir"
@@ -10,11 +15,11 @@ echo "Changing configurations to the one in Helen Chong's yadm repo..."
 yadm restore .
 
 echo "Setting up the system locale..."
-bash "$bootstrap_dir/locale.sh" 2>&1 | tee "$bootstrap_log_dir/locale.log"
+log_bootstrap "locale"
 
 echo "Installing software for these configuration files..."
 echo "Installing packages from Arch Linux's repository..."
-bash "$bootstrap_dir/pacman.sh" 2>&1 | tee "$bootstrap_log_dir/pacman.log"
+log_bootstrap "pacman"
 
 echo "Compiling paru, the AUR helper..."
 bash "$bootstrap_dir/paru.sh" >"$bootstrap_log_dir/paru.log"
@@ -22,22 +27,22 @@ echo "Installing AUR packages for these config files..."
 paru -S gpu-screen-recorder gpu-screen-recorder-ui 2>&1 | tee "$bootstrap_log_dir/gpu-screen-recorder.log"
 
 echo "Installing additional software from outside Arch Linux's repo and AUR..."
-bash "$bootstrap_dir/extra-software.sh" 2>&1 | tee "$bootstrap_log_dir/extra-software.log"
+log_bootstrap "extra-software"
 
 echo "Setting up the Catppuccin global theme for KDE Plasma..."
-bash "$bootstrap_dir/catppuccin-kde.sh" 2>&1 | tee "$bootstrap_log_dir/catppuccin-kde.log"
+log_bootstrap "catppuccin-kde"
 
 echo "Setting up the Catppuccin theme for tmux..."
-bash "$bootstrap_dir/catppuccin-tmux.sh" 2>&1 | tee "$bootstrap_log_dir/catppuccin-tmux.log"
+log_bootstrap "catppuccin-tmux"
 
 echo "Updating bat's binary cache to apply the Catppuccin Mocha theme..."
 bat cache --build
 
 echo "Installing plugins for MPV player..."
-bash "$bootstrap_dir/mpv.sh" 2>&1 | tee "$bootstrap_log_dir/mpv.log"
+log_bootstrap "mpv"
 
 echo "Setting up Neovim..."
-bash "$bootstrap_dir/neovim.sh" 2>&1 | tee "$bootstrap_log_dir/neovim.log"
+log_bootstrap "neovim"
 
 echo "Updating Helen Chong's yadm repo origin URL..."
 yadm remote set-url origin "git@git.helenchong.dev:helenchong/dotfiles.git"
