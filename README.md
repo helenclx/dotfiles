@@ -24,7 +24,7 @@ My configuration files in this repository also change system fonts and fonts use
 
 ## Theming
 
-I use [Catppuccin](https://catppuccin.com/) as the default colour scheme of most programs I use, so my dotfiles also involve styling various programs with Catppuccin.
+I use [Catppuccin](https://catppuccin.com/) as the default colour scheme of most programs I use, so my dotfiles also involve styling various programs with Catppuccin. My favourite Catppuccin flavour is Mocha, while my favourite accent is Mauve.
 
 For my KDE Plasma desktop environment, I use [Catppuccin](https://github.com/catppuccin/kde) as the global theme, which will be installed by my yadm bootstrap program. However, for window decorations, I use [Klassy](https://github.com/paulmcauley/klassy), with my own configuration that is also included in this repository.
 
