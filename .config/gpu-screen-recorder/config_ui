@@ -69,6 +69,7 @@ replay.start_stop_hotkey 95 17
 replay.time 60
 replay.turn_on_replay_automatically_mode dont_turn_on_automatically
 screenshot.change_image_resolution false
+screenshot.custom_script 
 screenshot.image_format png
 screenshot.image_height 1080
 screenshot.image_quality very_high
