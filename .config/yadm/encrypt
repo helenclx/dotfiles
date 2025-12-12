@@ -3,3 +3,4 @@
 .gnupg/**/*.key
 .gnupg/*.gpg
 .gnupg/pubring.kbx
+.config/halloy/passwords/*

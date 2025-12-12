@@ -23,8 +23,14 @@ log_bootstrap "pacman"
 
 echo "Compiling paru, the AUR helper..."
 bash "$bootstrap_dir/paru.sh" >"$bootstrap_log_dir/paru.log"
+
 echo "Installing AUR packages for these config files..."
+
+echo "Installing gpu-screen-recorder and gpu-screen-recorder-ui..."
 paru -S gpu-screen-recorder gpu-screen-recorder-ui 2>&1 | tee "$bootstrap_log_dir/gpu-screen-recorder.log"
+
+echo "Installing Halloy..."
+paru -S halloy 2>&1 | tee "$bootstrap_log_dir/halloy.log"
 
 echo "Installing additional software from outside Arch Linux's repo and AUR..."
 log_bootstrap "extra-software"
