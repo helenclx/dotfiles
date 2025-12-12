@@ -22,8 +22,8 @@ code = "#B7BDF8"
 highlight = "#594C76"
 nickname = "#89DCEB"
 selection = "#2C324A"
-timestamp = "#585A6E"
-topic = "#7F849C"
+timestamp = "#7f849c"
+topic = "#9399b2"
 url = "#89B4FA"
 
 [buffer.server_messages]
