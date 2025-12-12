@@ -1,42 +1,42 @@
 [general]
-background = "#11111b"
-border = "#6c7086"
-horizontal_rule = "#313244"
-unread_indicator = "#cba6f7"
+background = "#11111B"
+border = "#6C7086"
+horizontal_rule = "#1E1E2E"
+unread_indicator = "#CBA6F7"
 
 [text]
-primary = "#cdd6f4"
-secondary = "#a6adc8"
-tertiary = "#cba6f7"
-success = "#a6e3a1"
-error = "#f38ba8"
-
-[buttons.primary]
-background = "#11111b"
-background_hover = "#181825"
-background_selected = "#1e1e2e"
-background_selected_hover = "#181825"
-
-[buttons.secondary]
-background = "#181825"
-background_hover = "#45475a"
-background_selected = "#313244"
-background_selected_hover = "#45475a"
+primary = "#CDD6F4"
+secondary = "#A6ADC8"
+tertiary = "#CBA6F7"
+success = "#A6E3A1"
+error = "#F38BA8"
 
 [buffer]
-action = "#fab387"
-background = "#1e1e2e"
-background_text_input = "#181825"
-background_title_bar = "#181825"
-border = "#11111b"
-border_selected = "#b4befe"
-code = "#b4befe"
-highlight = "#45475a"
-nickname = "#89dceb"
-selection = "#313244"
-timestamp = "#bac2de"
-topic = "#7f849c"
-url = "#89b4fa"
+action = "#FAB387"
+background = "#181825"
+background_text_input = "#1E1E2E"
+background_title_bar = "#1E1E2E"
+border = "#11111B"
+border_selected = "#4C4163"
+code = "#B7BDF8"
+highlight = "#594C76"
+nickname = "#89DCEB"
+selection = "#2C324A"
+timestamp = "#585A6E"
+topic = "#7F849C"
+url = "#89B4FA"
 
 [buffer.server_messages]
-default = "#f9e2af"
+default = "#F9E2AF"
+
+[buttons.primary]
+background = "#00000000"
+background_hover = "#1A1A29"
+background_selected = "#1E1E2F"
+background_selected_hover = "#222236"
+
+[buttons.secondary]
+background = "#232336"
+background_hover = "#2B2B42"
+background_selected = "#4C4163"
+background_selected_hover = "#685786"
