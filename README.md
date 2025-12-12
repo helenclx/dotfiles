@@ -1,6 +1,6 @@
 # Helen Chong's Dot Files
 
-Configuration files for my Linux home directory, managed with [yadm](https://yadm.io/).
+Configuration files for my Linux desktop home directory, managed with [yadm](https://yadm.io/).
 
 These configurations are intended for [Arch Linux](https://archlinux.org/) with [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, since these are what I use on my personal computer daily.
 
@@ -56,7 +56,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [glow](https://github.com/charmbracelet/glow)
 - [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
     - Install `gpu-screen-recorder` and `gpu-screen-recorder-ui` from AUR
-- [Halloy](https://halloy.chat/)
+- [Halloy](https://halloy.chat/) (installed from AUR)
 - [hyfetch](https://github.com/hykilpikonna/hyfetch)
 - [Kate](https://kate-editor.org/)
 - [KCharSelect](https://apps.kde.org/kcharselect/)
