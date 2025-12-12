@@ -20,6 +20,9 @@ message_user = "replace-pane"
 [actions.sidebar]
 buffer = "replace-pane"
 
+[buffer.date_separators]
+format = "%A, %-d %B %Y"
+
 [buffer.server_messages.condense]
 messages = ["change-nick", "join", "part", "quit"]
 dimmed = 0.7
