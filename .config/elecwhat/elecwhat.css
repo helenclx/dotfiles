@@ -1,4 +1,8 @@
-span {
+#main span {
     font-size: 115% !important;
     line-height: 1.25 !important;
+}
+
+#pane-side span {
+    font-size: 110% !important;
 }
