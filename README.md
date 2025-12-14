@@ -32,7 +32,7 @@ For my KDE Plasma desktop environment, I use [Catppuccin](https://github.com/cat
 
 Below only lists software that uses the configuration files in this repository. For a more comprehensive list of the hardware and software I use, check out [my /uses page](https://helenchong.dev/uses/).
 
-My yadm bootstrap program will install these software and dependencies after cloning my yadm repository, except for those marked with * due to requiring manual downloads. [paru](https://github.com/Morganamilo/paru) is my Arch User Repository (AUR) helper of choice, so my yadm bootstrap program will compile paru to install AUR packages.
+My yadm bootstrap program will install these software and dependencies after cloning my yadm repository, except for those marked with * due to requiring manual downloads. [yay](https://github.com/Jguer/yay) is my Arch User Repository (AUR) helper of choice, so my yadm bootstrap program will compile yay to install AUR packages.
 
 - [Bash](https://www.gnu.org/software/bash/)
 - [bat](https://github.com/sharkdp/bat)
