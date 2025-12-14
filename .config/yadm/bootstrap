@@ -32,6 +32,9 @@ yay -S gpu-screen-recorder gpu-screen-recorder-ui 2>&1 | tee "$bootstrap_log_dir
 echo "Installing Halloy..."
 yay -S halloy 2>&1 | tee "$bootstrap_log_dir/halloy.log"
 
+echo "Installing ElecWhat..."
+yay -S elecwhat-bin 2>&1 | tee "$bootstrap_log_dir/elecwhat.log"
+
 echo "Installing additional software from outside Arch Linux's repo and AUR..."
 log_bootstrap "extra-software"
 
