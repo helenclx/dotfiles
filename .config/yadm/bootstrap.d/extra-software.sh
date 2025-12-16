@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Installing superfile with official install script..."
+bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
+
 echo "Installng yt-dlp with pipx..."
 pipx install yt-dlp
 
