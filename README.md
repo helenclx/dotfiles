@@ -37,18 +37,18 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Bash](https://www.gnu.org/software/bash/)
 - [bat](https://github.com/sharkdp/bat)
 - [Easy Effects](https://github.com/wwmm/easyeffects)
-    - [Linux Studio Plugins](https://lsp-plug.in/) (`lsp-plugins-lv2` in Arch Linux's repository)
-    - [Calf Studio Gear](http://calf-studio-gear.org/) (`calf` in Arch Linux's repository)
+	- [Linux Studio Plugins](https://lsp-plug.in/) (`lsp-plugins-lv2` in Arch Linux's repository)
+	- [Calf Studio Gear](http://calf-studio-gear.org/) (`calf` in Arch Linux's repository)
 - [Elisa](https://apps.kde.org/elisa/)
 - [ElecWhat](https://github.com/piec/elecwhat)
-    - Install `elecwhat-bin` from AUR
+	- Install `elecwhat-bin` from AUR
 - [eza](https://github.com/eza-community/eza)
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - [Fcitx 5](https://fcitx-im.org/)
-    - [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
-    - [fcitx5-configtool](https://github.com/fcitx/fcitx5-configtool)
-    - [fcitx5-qt](https://github.com/fcitx/fcitx5-qt) and [fcitx5-gtk](https://github.com/fcitx/fcitx5-gtk) — required to make Fcitx 5 work across various apps
-    - [Noto CJK fonts](https://github.com/notofonts/noto-cjk) (`noto-fonts-cjk` in Arch Linux's repository) — required for displaying Chinese characters
+	- [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
+	- [fcitx5-configtool](https://github.com/fcitx/fcitx5-configtool)
+	- [fcitx5-qt](https://github.com/fcitx/fcitx5-qt) and [fcitx5-gtk](https://github.com/fcitx/fcitx5-gtk) — required to make Fcitx 5 work across various apps
+	- [Noto CJK fonts](https://github.com/notofonts/noto-cjk) (`noto-fonts-cjk` in Arch Linux's repository) — required for displaying Chinese characters
 - [Fish shell](https://fishshell.com/)
 - [Foliate](https://johnfactotum.github.io/foliate/)
 - [FreeTube](https://freetubeapp.io/)*
@@ -57,7 +57,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Git](https://git-scm.com/)
 - [glow](https://github.com/charmbracelet/glow)
 - [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
-    - Install `gpu-screen-recorder` and `gpu-screen-recorder-ui` from AUR
+	- Install `gpu-screen-recorder` and `gpu-screen-recorder-ui` from AUR
 - [Halloy](https://halloy.chat/) (installed from AUR)
 - [hyfetch](https://github.com/hykilpikonna/hyfetch)
 - [Kate](https://kate-editor.org/)
@@ -67,7 +67,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [KWrite](https://apps.kde.org/kwrite/)
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [mpv](https://mpv.io/)
-    - [mpv-mpris](https://github.com/hoyon/mpv-mpris)
+	- [mpv-mpris](https://github.com/hoyon/mpv-mpris)
 - [Neovim](https://neovim.io/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Starship](https://starship.rs/)
@@ -83,10 +83,10 @@ My yadm bootstrap program will install these software and dependencies after clo
 
 - [Catppuccin](https://catppuccin.com/) colour scheme
 - Easy Effects presets:
-    - [Digitalone1's output presets](https://github.com/Digitalone1/EasyEffects-Presets)
-    - jtrv's [microphone preset: noise reduction + NPR masculine voice](https://gist.github.com/jtrv/47542c8be6345951802eebcf9dc7da31)
+	- [Digitalone1's output presets](https://github.com/Digitalone1/EasyEffects-Presets)
+	- jtrv's [microphone preset: noise reduction + NPR masculine voice](https://gist.github.com/jtrv/47542c8be6345951802eebcf9dc7da31)
 - mpv scripts:
-    - [mpv_sponsorblock_minimal](https://codeberg.org/jouni/mpv_sponsorblock_minimal) by jouni
-    - [uosc](https://github.com/tomasklaen/uosc) by Tomas Klaen
-    - [thumbfast](https://github.com/po5/thumbfast) by po5
+	- [mpv_sponsorblock_minimal](https://codeberg.org/jouni/mpv_sponsorblock_minimal) by jouni
+	- [uosc](https://github.com/tomasklaen/uosc) by Tomas Klaen
+	- [thumbfast](https://github.com/po5/thumbfast) by po5
 - [a11y-dark colour scheme for Vim](https://github.com/ericwbailey/a11y-syntax-highlighting/blob/main/dist/vim/a11y-dark.vim) by Reuben L. Lillie
