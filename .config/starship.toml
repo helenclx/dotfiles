@@ -12,8 +12,11 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:green bg:sapphire)\
+$nodejs\
+$python\
+[](fg:sapphire bg:lavender)\
 $time\
-[ ](fg:sapphire)\
+[ ](fg:lavender)\
 $cmd_duration\
 $line_break\
 $character"""
@@ -79,11 +82,21 @@ format = '[[ $symbol $branch ](fg:crust bg:green)]($style)'
 style = "bg:green"
 format = '[[($all_status$ahead_behind )](fg:crust bg:green)]($style)'
 
+[nodejs]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:sapphire)]($style)'
+
+[python]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:crust bg:sapphire)]($style)'
+
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:sapphire"
-format = '[[  $time ](fg:crust bg:sapphire)]($style)'
+style = "bg:lavender"
+format = '[[  $time ](fg:crust bg:lavender)]($style)'
 
 [line_break]
 disabled = true
