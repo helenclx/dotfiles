@@ -1,12 +1,6 @@
-" Enable syntax highlighting
 syntax on
+filetype plugin on
 
-" Change tab size
 set tabstop=4 shiftwidth=4
-
-" Set color scheme
-" a11y-dark color scheme by Reuben L. Lillie
-color a11y-dark
-
-" Set default shell for the built-in terminal
 set shell=/usr/bin/fish
+color a11y-dark
