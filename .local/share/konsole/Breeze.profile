@@ -11,3 +11,6 @@ TerminalRows=25
 
 [Scrolling]
 HistorySize=2000
+
+[Terminal Features]
+BlinkingCursorEnabled=true
