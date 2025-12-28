@@ -40,8 +40,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 	- [Linux Studio Plugins](https://lsp-plug.in/) (`lsp-plugins-lv2` in Arch Linux's repository)
 	- [Calf Studio Gear](http://calf-studio-gear.org/) (`calf` in Arch Linux's repository)
 - [Elisa](https://apps.kde.org/elisa/)
-- [ElecWhat](https://github.com/piec/elecwhat)
-	- Install `elecwhat-bin` from AUR
+- [ElecWhat](https://github.com/piec/elecwhat) (install `elecwhat-bin` from AUR)
 - [eza](https://github.com/eza-community/eza)
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - [Fcitx 5](https://fcitx-im.org/)
@@ -56,9 +55,8 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Ghostwriter](https://ghostwriter.kde.org/)
 - [Git](https://git-scm.com/)
 - [glow](https://github.com/charmbracelet/glow)
-- [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
-	- Install `gpu-screen-recorder` and `gpu-screen-recorder-ui` from AUR
-- [Halloy](https://halloy.chat/) (installed from AUR)
+- [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/) (install `gpu-screen-recorder` and `gpu-screen-recorder-ui` from AUR)
+- [Halloy](https://halloy.chat/)
 - [hyfetch](https://github.com/hykilpikonna/hyfetch)
 - [Kate](https://kate-editor.org/)
 - [KCharSelect](https://apps.kde.org/kcharselect/)
