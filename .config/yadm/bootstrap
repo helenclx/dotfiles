@@ -44,6 +44,9 @@ log_bootstrap "catppuccin-tmux"
 echo "Updating bat's binary cache to apply the Catppuccin Mocha theme..."
 bat cache --build
 
+echo "Seting fish shell theme to Catppuccin Mocha..."
+fish_config theme save "Catppuccin Mocha"
+
 echo "Installing plugins for MPV player..."
 log_bootstrap "mpv"
 
