@@ -3,8 +3,8 @@
 bootstrap_dir="$HOME/.config/yadm/bootstrap.d"
 
 log_bootstrap() {
-    local script=$1
-    bash "$bootstrap_dir/$script.sh" 2>&1 | tee "$bootstrap_log_dir/$script.log"
+	local script=$1
+	bash "$bootstrap_dir/$script.sh" 2>&1 | tee "$bootstrap_log_dir/$script.log"
 }
 
 echo "Creating bootstrap logs directory..."
@@ -43,9 +43,6 @@ log_bootstrap "catppuccin-tmux"
 
 echo "Updating bat's binary cache to apply the Catppuccin Mocha theme..."
 bat cache --build
-
-echo "Seting fish shell theme to Catppuccin Mocha..."
-fish_config theme save "Catppuccin Mocha"
 
 echo "Installing plugins for MPV player..."
 log_bootstrap "mpv"
