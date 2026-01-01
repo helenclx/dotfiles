@@ -35,6 +35,15 @@ yay -S elecwhat-bin 2>&1 | tee "$bootstrap_log_dir/elecwhat.log"
 echo "Installing additional software from outside Arch Linux's repo and AUR..."
 log_bootstrap "extra-software"
 
+echo "Downloading and installing the latest version of Karousel, the script to add scrollable tiling window management to KDE Plasma..."
+mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
+curl -s https://api.github.com/repos/peterfajdiga/karousel/releases/latest |
+	grep '"tarball_url":' |
+	sed -E 's/.*"([^"]+)".*/\1/' |
+	xargs curl -L |
+	tar -xz -C ~/.local/share/kwin/scripts/
+cd "$HOME" || return
+
 echo "Setting up the Catppuccin global theme for KDE Plasma..."
 log_bootstrap "catppuccin-kde"
 
@@ -59,4 +68,5 @@ cd "$HOME" || return
 
 echo "yadm bootstrap program executed. Check out $bootstrap_log_dir for logs."
 echo "To complete the setup, select Fcitx 5 as the virtual keyboard in the system settings."
+echo "Additionally, it is recommended to enable Karousel in the KWin Scripts settings."
 echo "Finally, reboot your system to apply changes."
