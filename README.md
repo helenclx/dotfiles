@@ -4,13 +4,13 @@ Configuration files for my Linux desktop home directory, managed with [yadm](htt
 
 These configurations are intended for [Arch Linux](https://archlinux.org/) with [KDE Plasma](https://kde.org/plasma-desktop/) as the desktop environment, since these are what I use on my personal computer daily.
 
-In addition to the dot files of my yadm repository, I have a custom setup for [Neovim](https://neovim.io/), my main code editor, in a [separate Git repository](https://git.helenchong.dev/helenchong/LazyVim) that will be cloned into the home directory by my yadm bootstrap program.
+In addition to the dot files of my yadm repository, I have a custom setup for [Neovim](https://neovim.io/), my main code editor, in a [separate Git repository](https://git.helenchong.dev/helenchong/LazyVim) that will be cloned into the home directory by my yadm bootstrap script.
 
 ## Instructions for Using This Repository
 
 1. Install [yadm](https://yadm.io/).
 2. Clone this repository with yadm into `$HOME`.
-3. Install my yadm bootstrap program when prompted.
+3. Run my yadm bootstrap script when prompted.
 4. Reboot your system.
 
 ## Fonts
@@ -24,9 +24,9 @@ My configuration files in this repository also change system fonts and fonts use
 
 ## Theming
 
-I use [Catppuccin](https://catppuccin.com/) as the default colour scheme of most programs I use, so my dotfiles also involve styling various programs with Catppuccin. My favourite Catppuccin flavour is Mocha, while my favourite accent is Mauve.
+I use [Catppuccin](https://catppuccin.com/) as the default colour scheme of most programs I use, so my dotfiles also include styling various programs with Catppuccin. My favourite Catppuccin flavour is Mocha, while my favourite accent is Mauve.
 
-For my KDE Plasma desktop environment, I use [Catppuccin](https://github.com/catppuccin/kde) as the global theme, which will be installed by my yadm bootstrap program. However, for window decorations, I use [Klassy](https://github.com/paulmcauley/klassy), with my own configuration that is also included in this repository.
+For my KDE Plasma desktop environment, I use [Catppuccin](https://github.com/catppuccin/kde) as the global theme, which will be installed by my yadm bootstrap script. However, for window decorations, I use [Klassy](https://github.com/paulmcauley/klassy), with my own configuration that is also included in this repository.
 
 ## Software and Tools Used
 
@@ -76,6 +76,11 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed with [pipx](https://github.com/pypa/pipx))
 - [yt-x](https://github.com/Benexl/yt-x)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
+
+
+## Additional Setup
+
+I use [Karousel](https://github.com/peterfajdiga/karousel), a script to add scrollable tiling window management to KDE Plasma, so my configurations for some of the above software include window sizes that are adjusted with Karousel in mind.
 
 ## Credits
 
