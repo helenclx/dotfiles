@@ -1,5 +1,5 @@
 {"_id":"baseTheme","value":"catppuccinMocha"}
-{"_id":"bounds","value":{"x":40,"y":44,"width":1201,"height":616,"maximized":false,"fullScreen":false}}
+{"_id":"bounds","value":{"x":16,"y":44,"width":1249,"height":616,"maximized":false,"fullScreen":false}}
 {"_id":"checkForBlogPosts","value":true}
 {"_id":"defaultQuality","value":"1080"}
 {"_id":"defaultViewingMode","value":"theatre"}
