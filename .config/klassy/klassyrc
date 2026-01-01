@@ -14,3 +14,7 @@ LookAndFeelSet=Catppuccin-Mocha-Mauve
 BoldButtonIcons=BoldIconsBold
 ButtonIconStyle=StyleOxygen
 IconSize=IconMedium
+
+[WindowOutlineStyle]
+WindowOutlineAccentColorOpacityActive=100
+WindowOutlineContrastOpacityInactive=75
