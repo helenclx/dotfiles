@@ -44,7 +44,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [eza](https://github.com/eza-community/eza)
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - [Fcitx 5](https://fcitx-im.org/)
-	- [fcitx5-chinese-add-ons](https://github.com/fcitx/fcitx5-chinese-addons)
+	- [fcitx5-chinese-addons](https://github.com/fcitx/fcitx5-chinese-addons)
 	- [fcitx5-configtool](https://github.com/fcitx/fcitx5-configtool)
 	- [fcitx5-qt](https://github.com/fcitx/fcitx5-qt) and [fcitx5-gtk](https://github.com/fcitx/fcitx5-gtk) — required to make Fcitx 5 work across various apps
 	- [Noto CJK fonts](https://github.com/notofonts/noto-cjk) (`noto-fonts-cjk` in Arch Linux's repository) — required for displaying Chinese characters
