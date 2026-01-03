@@ -26,7 +26,7 @@ My configuration files in this repository also change system fonts and fonts use
 
 I use [Catppuccin](https://catppuccin.com/) as the default colour scheme of most programs I use, so my dotfiles also include styling various programs with Catppuccin. My favourite Catppuccin flavour is Mocha, while my favourite accent is Mauve.
 
-For my KDE Plasma desktop environment, I use [Catppuccin](https://github.com/catppuccin/kde) as the global theme, which will be installed by my yadm bootstrap program. However, for window decorations, I use [Klassy](https://github.com/paulmcauley/klassy), with my own configuration that is also included in this repository.
+For my KDE Plasma desktop environment, I use [Catppuccin](https://github.com/catppuccin/kde) as the global theme, which will be installed by my yadm bootstrap program. However, for window decorations, I use [Klassy](https://github.com/paulmcauley/klassy), with my own configuration that is also included in this repository. My yadm bootstrap program will also download and install Klassy.
 
 ## Software and Tools Used
 
@@ -80,7 +80,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 
 ## Additional Setup
 
-I use [Karousel](https://github.com/peterfajdiga/karousel), a script to add scrollable tiling window management to KDE Plasma, so my configurations for some of the above software include window sizes that are adjusted with Karousel in mind. My yadm bootstrap script will download and install Karousel, and it is recommended to enable it in the KWin Scripts settings.
+I use [Karousel](https://github.com/peterfajdiga/karousel), a script to add scrollable tiling window management to KDE Plasma, so my configurations for some of the above software include window sizes that are adjusted with Karousel in mind. My yadm bootstrap program will download and install Karousel.
 
 ## Credits
 
