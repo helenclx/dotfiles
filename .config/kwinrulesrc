@@ -1,0 +1,15 @@
+[257dd26a-d113-45f1-a90d-a68ea8eec686]
+Description=Window settings for Firefox Picture-in-Picture
+above=true
+aboverule=2
+position=853,436
+positionrule=3
+title=Picture-in-Picture
+titlematch=1
+types=32
+wmclass=firefox
+wmclassmatch=1
+
+[General]
+count=1
+rules=257dd26a-d113-45f1-a90d-a68ea8eec686
