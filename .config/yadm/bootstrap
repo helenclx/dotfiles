@@ -50,6 +50,9 @@ log_bootstrap "catppuccin-kde"
 echo "Setting up the Catppuccin theme for tmux..."
 log_bootstrap "catppuccin-tmux"
 
+echo "Downloading and installing Klassy, a theming plugin for KDE Plasma..."
+log_bootstrap "klassy"
+
 echo "Updating bat's binary cache to apply the Catppuccin Mocha theme..."
 bat cache --build
 
