@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Installing packages from Arch Linux's repository..."
+
 echo "Installing software dependencies from Arch Linux's repository..."
 sudo pacman -S --needed calf curl chafa fd jq lsp-plugins-lv2 noto-fonts-cjk python python-pipx unzip
 

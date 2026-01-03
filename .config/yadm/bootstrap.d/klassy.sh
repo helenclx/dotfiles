@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Downloading and installing Klassy, a theming plugin for KDE Plasma..."
+
 mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
 
 base_url="https://download.opensuse.org/repositories/home:/paul4us/Arch/x86_64/"

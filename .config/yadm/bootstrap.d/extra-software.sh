@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Installing additional software from outside Arch Linux's repo and AUR..."
+
 echo "Installing superfile with official install script..."
 bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
 

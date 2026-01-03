@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Setting up Neovim..."
+
 echo "Backing up Neovim files..."
 mv ~/.config/nvim{,.bak}
 mv ~/.local/share/nvim{,.bak}
