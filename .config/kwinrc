@@ -11,7 +11,7 @@ karouselEnabled=true
 movewindowEnabled=false
 
 [Script-karousel]
-presetWidths=50%, 75%, 100%
+presetWidths=50%, 75%, 80%, 90%, 95%, 100%
 scrollingCentered=true
 scrollingLazy=false
 windowRules=[\n    {\n        "class": "firefox",\n        "caption": "Picture-in-Picture",\n        "tile": false\n    },\n    {\n        "class": "(org\\\\.kde\\\\.)?plasmashell",\n        "tile": false\n    },\n    {\n        "class": "(org\\\\.kde\\\\.)?polkit-kde-authentication-agent-1",\n        "tile": false\n    },\n    {\n        "class": "(org\\\\.kde\\\\.)?kded6",\n        "tile": false\n    },\n    {\n        "class": "(org\\\\.kde\\\\.)?kcalc",\n        "tile": false\n    },\n    {\n        "class": "(org\\\\.kde\\\\.)?kfind",\n        "tile": true\n    },\n    {\n        "class": "(org\\\\.kde\\\\.)?kruler",\n        "tile": false\n    },\n    {\n        "class": "(org\\\\.kde\\\\.)?krunner",\n        "tile": false\n    },\n    {\n        "class": "(org\\\\.kde\\\\.)?yakuake",\n        "tile": false\n    },\n    {\n        "class": "steam",\n        "caption": "Steam Big Picture Mode",\n        "tile": false\n    },\n    {\n        "class": "zoom",\n        "caption": "Zoom Cloud Meetings|zoom|zoom <2>",\n        "tile": false\n    },\n    {\n        "class": "jetbrains-.*",\n        "caption": "splash",\n        "tile": false\n    },\n    {\n        "class": "jetbrains-.*",\n        "caption": "Unstash Changes|Paths Affected by stash@.*",\n        "tile": true\n    }\n]
