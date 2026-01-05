@@ -2,7 +2,7 @@
 set -g fish_greeting
 
 # Set theme for fish shell
-fish_config theme choose "Catppuccin Mocha"
+fish_config theme choose "Catppuccin Mocha" --color-theme=dark
 
 # Integrate certain programs into the shell
 fzf --fish | source
