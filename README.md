@@ -34,6 +34,7 @@ Below only lists software that uses the configuration files in this repository. 
 
 My yadm bootstrap program will install these software and dependencies after cloning my yadm repository. [yay](https://github.com/Jguer/yay) is my Arch User Repository (AUR) helper of choice, so my yadm bootstrap program will compile yay to install AUR packages.
 
+- [asciinema](https://asciinema.org/)
 - [Bash](https://www.gnu.org/software/bash/)
 - [bat](https://github.com/sharkdp/bat)
 - [Easy Effects](https://github.com/wwmm/easyeffects)
