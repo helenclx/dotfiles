@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-bootstrap_dir="$HOME/.config/yadm/bootstrap.d"
+BOOTSTRAP_DIR="$HOME/.config/yadm/bootstrap.d"
 
 log_bootstrap() {
-	local script=$1
-	bash "$bootstrap_dir/$script.sh" 2>&1 | tee "$bootstrap_log_dir/$script.log"
+	local SCRIPT=$1
+	bash "$BOOTSTRAP_DIR/$SCRIPT.sh" 2>&1 | tee "$BOOTSTRAP_LOG_DIR/$SCRIPT.log"
 }
 
 echo "Creating bootstrap logs directory..."
-bootstrap_log_dir="$HOME/yadm-bootstrap-logs"
-mkdir -p "$bootstrap_log_dir"
+BOOTSTRAP_LOG_DIR="$HOME/yadm-bootstrap-logs"
+mkdir -p "$BOOTSTRAP_LOG_DIR"
 
 echo "Changing configurations to the one in Helen Chong's yadm repo..."
 yadm restore .
@@ -24,10 +24,10 @@ log_bootstrap "yay"
 echo "Installing AUR packages for these config files..."
 
 echo "Installing gpu-screen-recorder and gpu-screen-recorder-ui..."
-yay -S gpu-screen-recorder gpu-screen-recorder-ui 2>&1 | tee "$bootstrap_log_dir/gpu-screen-recorder.log"
+yay -S gpu-screen-recorder gpu-screen-recorder-ui 2>&1 | tee "$BOOTSTRAP_LOG_DIR/gpu-screen-recorder.log"
 
 echo "Installing ElecWhat..."
-yay -S elecwhat-bin 2>&1 | tee "$bootstrap_log_dir/elecwhat.log"
+yay -S elecwhat-bin 2>&1 | tee "$BOOTSTRAP_LOG_DIR/elecwhat.log"
 
 log_bootstrap "extra-software"
 
@@ -57,6 +57,6 @@ cd "$HOME/.config/nvim" || return
 git remote set-url origin "git@git.helenchong.dev:helenchong/LazyVim.git"
 cd "$HOME" || return
 
-echo "yadm bootstrap program executed. Check out $bootstrap_log_dir for logs."
+echo "yadm bootstrap program executed. Check out $BOOTSTRAP_LOG_DIR for logs."
 echo "To complete the setup, select Fcitx 5 as the virtual keyboard in the system settings."
 echo "Finally, reboot your system to apply changes."
