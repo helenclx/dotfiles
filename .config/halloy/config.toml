@@ -30,6 +30,9 @@ dimmed = 0.7
 [buffer.server_messages.topic]
 enabled = false
 
+[buffer.timestamp]
+context_menu_format = "%d %B %Y, %T"
+
 [servers.omglol]
 server = "irc.social.lol"
 nickname = "helenchong"
