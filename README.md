@@ -17,10 +17,10 @@ In addition to the dot files of my yadm repository, I have a custom setup for [N
 
 My configuration files in this repository also change system fonts and fonts used by certain software, so it is recommended to install the following fonts, then reboot your system for the font changes to take effect:
 
+- [IBM Plex Sans Variable](https://github.com/IBM/plex)
 - [Intel One Mono](https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html)
 - [Maple Mono NF CN](https://font.subf.dev/en/)
-- [Readex Pro](https://fonts.google.com/specimen/Readex+Pro)
-- [Literata](https://fonts.google.com/specimen/Literata)
+- [Literata](https://github.com/googlefonts/literata)
 
 ## Theming
 
