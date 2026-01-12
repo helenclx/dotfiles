@@ -75,9 +75,9 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [Vim](https://www.vim.org/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed with [pipx](https://github.com/pypa/pipx))
+	- NOTE: My bootstrap program will also install [Deno](https://deno.com/), which is required by yt-dlp to [solve YouTube's JavaScript challenges](https://github.com/yt-dlp/yt-dlp/wiki/EJS).
 - [yt-x](https://github.com/Benexl/yt-x)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
-
 
 ## Additional Setup
 
