@@ -1,8 +1,8 @@
 {
-  "css": [
-    "file://~/.config/elecwhat/elecwhat.css"
-  ],
-  "spellcheck-languages": [
-    "en-GB"
-  ]
+	"css": [
+		"file://~/.config/elecwhat/elecwhat.css"
+	],
+	"spellcheck-languages": [
+		"en-GB"
+	]
 }
