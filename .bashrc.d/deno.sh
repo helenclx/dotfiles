@@ -1,3 +1,3 @@
 # Deno
-. "/home/helen/.deno/env"
-source /home/helen/.local/share/bash-completion/completions/deno.bash
+. "$HOME/.deno/env"
+source "$HOME"/.local/share/bash-completion/completions/deno.bash
