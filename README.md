@@ -72,6 +72,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Starship](https://starship.rs/)
 - [Superfile](https://superfile.dev/)
 - [tealdeer](https://github.com/tealdeer-rs/tealdeer)
+- [Tokodon](https://apps.kde.org/en-gb/tokodon/)
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [Vim](https://www.vim.org/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed with [pipx](https://github.com/pypa/pipx))
