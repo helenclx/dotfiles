@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Arch Linux system cleanup
+
+# Install required packages from the Arch Linux repository:
+# sudo pacman -S --needed pacman-contrib moreutils
+
+echo "Remove image thumbnails..."
+rm -r ~/.cache/thumbnails
+
+echo "Clear Discord cache..."
+rm -r ~/.config/discord/Cache/Cache_Data/*
+
+echo "Retain only one past version of packages..."
+paccache -rk1
+echo "Remove all cached versions of uninstalled packages..."
+paccache -ruk0
+
+echo "Recursively remove unused packages (orphans) and their configuration files..."
+sudo pacman -Qdtq | ifne sudo pacman -Rns -
+
+echo "Clean cached packages..."
+yay -Sc

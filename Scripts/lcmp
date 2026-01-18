@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+# Perform systemd service actions for the LCMP (Linux, Caddy, MariaDB and PHP) stack
+
+# Install required packages from the Arch Linux repository:
+# sudo pacman -S --needed caddy mariadb php php-fpm
+
+# Location of PHP-FPM configuration file on Arch Linux:
+# /etc/php/php-fpm.d/www.conf
+
+# On Arch Linux, run the following command before starting the MariaDB service:
+# sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
+service_action() {
+	local SERVICES=('caddy' 'mariadb' 'php-fpm')
+	sudo systemctl "$1" "${SERVICES[@]}"
+}
+
+if [[ "$1" == "start" ]]; then
+	echo "Starting LCMP stack..."
+	service_action "$1"
+elif [[ "$1" == "stop" ]]; then
+	echo "Stopping LCMP stack..."
+	service_action "$1"
+elif [[ "$1" == "restart" ]]; then
+	echo "Restarting LCMP stack..."
+	service_action "$1"
+elif [[ "$1" == "enable" ]]; then
+	echo "Enabling LCMP stack..."
+	service_action "$1"
+	service_action "start"
+elif [[ "$1" == "disable" ]]; then
+	echo "Disabling LCMP stack..."
+	service_action "stop"
+	service_action "$1"
+elif [[ "$1" == "status" ]]; then
+	service_action "$1"
+else
+	# echo "Usage: $0 ACTION"
+	echo "Usage: $(basename "${0}") ACTION"
+	echo "Valid actions: start, stop, restart, enable, disable, status"
+fi

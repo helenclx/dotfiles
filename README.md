@@ -59,6 +59,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/) (install `gpu-screen-recorder` and `gpu-screen-recorder-ui` from AUR)
 - [Halloy](https://halloy.chat/)
 - [hyfetch](https://github.com/hykilpikonna/hyfetch)
+- [Karousel](https://github.com/peterfajdiga/karousel)
 - [Kate](https://kate-editor.org/)
 - [KCharSelect](https://apps.kde.org/kcharselect/)
 - [kitty](https://sw.kovidgoyal.net/kitty/)
@@ -80,9 +81,9 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [yt-x](https://github.com/Benexl/yt-x)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
 
-## Additional Setup
+## Extras
 
-I use [Karousel](https://github.com/peterfajdiga/karousel), a script to add scrollable tiling window management to KDE Plasma, so my configurations for some of the above software include window sizes that are adjusted with Karousel in mind. My yadm bootstrap program will download and install Karousel.
+This repository also includes a [`Scripts`](./Scripts) directory, which stores my shell scripts for system-wide utilities. I have configured Bash and fish shell to add my `Scripts` directory to the `$PATH` environment variable.
 
 ## Credits
 
