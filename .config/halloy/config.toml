@@ -8,6 +8,7 @@ theme = "catppuccin-mocha"
 
 [font]
 family = "Maple Mono NF CN"
+only_emojis_size = 18
 
 [actions.buffer]
 click_channel_name = "replace-pane"
