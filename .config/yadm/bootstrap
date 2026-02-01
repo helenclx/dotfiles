@@ -57,6 +57,9 @@ cd "$HOME/.config/nvim" || return
 git remote set-url origin "git@git.helenchong.dev:helenchong/LazyVim.git"
 cd "$HOME" || return
 
+echo "Changing the login shell to fish..."
+chsh -s /usr/bin/fish
+
 echo "yadm bootstrap program executed. Check out $BOOTSTRAP_LOG_DIR for logs."
 echo "To complete the setup, select Fcitx 5 as the virtual keyboard in the system settings."
 echo "Finally, reboot your system to apply changes."

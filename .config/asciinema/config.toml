@@ -1,5 +1,0 @@
-[server]
-url = "https://asciinema.org/"
-
-[session]
-command = "/usr/bin/fish"

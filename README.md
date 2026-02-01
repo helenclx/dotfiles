@@ -34,7 +34,6 @@ Below only lists software that uses the configuration files in this repository. 
 
 My yadm bootstrap program will install these software and dependencies after cloning my yadm repository. [yay](https://github.com/Jguer/yay) is my Arch User Repository (AUR) helper of choice, so my yadm bootstrap program will compile yay to install AUR packages.
 
-- [asciinema](https://asciinema.org/)
 - [Bash](https://www.gnu.org/software/bash/)
 - [bat](https://github.com/sharkdp/bat)
 - [Easy Effects](https://github.com/wwmm/easyeffects)
@@ -50,6 +49,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 	- [fcitx5-qt](https://github.com/fcitx/fcitx5-qt) and [fcitx5-gtk](https://github.com/fcitx/fcitx5-gtk) — required to make Fcitx 5 work across various apps
 	- [Noto CJK fonts](https://github.com/notofonts/noto-cjk) (`noto-fonts-cjk` in Arch Linux's repository) — required for displaying Chinese characters
 - [Fish shell](https://fishshell.com/)
+	- NOTE: My yadm bootstrap program will change the login shell to fish. 
 - [Foliate](https://johnfactotum.github.io/foliate/)
 - [FreeTube](https://freetubeapp.io/)
 - [fzf](https://github.com/junegunn/fzf)
