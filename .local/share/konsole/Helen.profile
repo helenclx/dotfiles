@@ -5,7 +5,7 @@ Font=Monospace,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 [General]
 Name=Helen
 Parent=FALLBACK/
-TerminalColumns=97
+TerminalColumns=90
 TerminalRows=25
 
 [Scrolling]
