@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-BOOTSTRAP_DIR="$HOME/.config/yadm/bootstrap.d"
+export BOOTSTRAP_DIR="$HOME/.config/yadm/bootstrap.d"
+
+echo "Creating bootstrap logs directory..."
+export BOOTSTRAP_LOG_DIR="$HOME/yadm-bootstrap-logs"
+mkdir -p "$BOOTSTRAP_LOG_DIR"
 
 log_bootstrap() {
 	local SCRIPT=$1
 	bash "$BOOTSTRAP_DIR/$SCRIPT.sh" 2>&1 | tee "$BOOTSTRAP_LOG_DIR/$SCRIPT.log"
 }
-
-echo "Creating bootstrap logs directory..."
-BOOTSTRAP_LOG_DIR="$HOME/yadm-bootstrap-logs"
-mkdir -p "$BOOTSTRAP_LOG_DIR"
 
 echo "Changing configurations to the one in Helen Chong's yadm repo..."
 yadm restore .
