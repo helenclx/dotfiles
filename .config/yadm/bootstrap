@@ -20,15 +20,7 @@ echo "Installing software for these configuration files..."
 
 log_bootstrap "pacman"
 log_bootstrap "yay"
-
-echo "Installing AUR packages for these config files..."
-
-echo "Installing gpu-screen-recorder and gpu-screen-recorder-ui..."
-yay -S gpu-screen-recorder gpu-screen-recorder-ui 2>&1 | tee "$BOOTSTRAP_LOG_DIR/gpu-screen-recorder.log"
-
-echo "Installing ElecWhat..."
-yay -S elecwhat-bin 2>&1 | tee "$BOOTSTRAP_LOG_DIR/elecwhat.log"
-
+bash "$BOOTSTRAP_DIR/aur.sh"
 log_bootstrap "extra-software"
 
 echo "Downloading and installing the latest version of Karousel, the script to add scrollable tiling window management to KDE Plasma..."

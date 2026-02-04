@@ -5,10 +5,6 @@ echo "Installing additional software from outside Arch Linux's repo and AUR..."
 echo "Installing superfile with official install script..."
 bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
 
-echo "Installing topgrade..."
-rustup default stable
-cargo install topgrade
-
 echo "Installing Deno, which is required by yt-dlp to solve YouTube's JavaScript challenges..."
 curl -fsSL https://deno.land/install.sh | sh
 echo "Installng yt-dlp with pipx..."
