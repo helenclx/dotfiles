@@ -74,12 +74,12 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Superfile](https://superfile.dev/)
 - [tealdeer](https://github.com/tealdeer-rs/tealdeer)
 - [Tokodon](https://apps.kde.org/en-gb/tokodon/)
-- [topgrade](https://github.com/topgrade-rs/topgrade)
-- [tmux](https://github.com/tmux/tmux/wiki)
+- [topgrade](https://github.com/topgrade-rs/topgrade) (installed with Cargo)
 - [Vim](https://www.vim.org/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed with [pipx](https://github.com/pypa/pipx))
 	- NOTE: My bootstrap program will also install [Deno](https://deno.com/), which is required by yt-dlp to [solve YouTube's JavaScript challenges](https://github.com/yt-dlp/yt-dlp/wiki/EJS).
 - [yt-x](https://github.com/Benexl/yt-x)
+- [Zellij](https://zellij.dev/)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
 
 ## Extras
