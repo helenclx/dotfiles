@@ -33,7 +33,6 @@ curl -s https://api.github.com/repos/peterfajdiga/karousel/releases/latest |
 cd "$HOME" || return
 
 log_bootstrap "catppuccin-kde"
-log_bootstrap "klassy"
 
 echo "Updating bat's binary cache to apply the Catppuccin Mocha theme..."
 bat cache --build
