@@ -122,7 +122,7 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
-1280x720 screen: Height=616
+1280x720 screen: Height=613
 1280x720 screen: Width=1039
 
 [filetree]
