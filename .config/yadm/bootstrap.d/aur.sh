@@ -16,6 +16,3 @@ install_aur_package "elecwhat-bin" "elecwhat"
 
 echo "Installing topgrade..."
 install_aur_package "topgrade"
-
-echo "installing Klassy, a theming plugin for KDE Plasma..."
-install_aur_package "klassy"
