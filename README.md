@@ -56,7 +56,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Ghostwriter](https://ghostwriter.kde.org/)
 - [Git](https://git-scm.com/)
 - [glow](https://github.com/charmbracelet/glow)
-- [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/) (install `gpu-screen-recorder` and `gpu-screen-recorder-ui` from AUR)
+- [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
 - [Halloy](https://halloy.chat/)
 - [hyfetch](https://github.com/hykilpikonna/hyfetch)
 - [Karousel](https://github.com/peterfajdiga/karousel)
@@ -74,7 +74,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Superfile](https://superfile.dev/)
 - [tealdeer](https://github.com/tealdeer-rs/tealdeer)
 - [Tokodon](https://apps.kde.org/en-gb/tokodon/)
-- [topgrade](https://github.com/topgrade-rs/topgrade) (install from AUR)
+- [topgrade](https://github.com/topgrade-rs/topgrade) (installed from AUR)
 - [Vim](https://www.vim.org/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed with [pipx](https://github.com/pypa/pipx))
 	- NOTE: My bootstrap program will also install [Deno](https://deno.com/), which is required by yt-dlp to [solve YouTube's JavaScript challenges](https://github.com/yt-dlp/yt-dlp/wiki/EJS).

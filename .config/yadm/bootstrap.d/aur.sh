@@ -8,9 +8,6 @@ install_aur_package() {
 
 echo "Installing AUR packages for these config files..."
 
-echo "Installing gpu-screen-recorder and gpu-screen-recorder-ui..."
-install_aur_package "gpu-screen-recorder gpu-screen-recorder-ui" "gpu-screen-recorder"
-
 echo "Installing ElecWhat..."
 install_aur_package "elecwhat-bin" "elecwhat"
 
