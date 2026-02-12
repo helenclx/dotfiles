@@ -1,9 +1,12 @@
 [user]
 	email = contact@helenchong.dev
 	name = Helen Chong
+	signingkey = /home/helen/.ssh/id_ed25519_gitsigning_helen.pub
 [init]
 	defaultBranch = main
 [commit]
 	gpgsign = true
 [core]
 	editor = nvim
+[gpg]
+	format = ssh
