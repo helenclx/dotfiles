@@ -10,32 +10,35 @@ echo "Installing the Catppuccin global theme for KDE Plasma..."
 chmod +x install.sh
 ./install.sh
 
-CURSOR_VERSION=2.0.0
-CURSOR_ROOT="$HOME/.local/share/icons"
-CURSOR_FLAVOUR="Catppuccin-Mocha"
-CURSOR_ACCENT="$CURSOR_FLAVOUR-Mauve-Cursors"
-CURSOR_DARK="$CURSOR_FLAVOUR-Dark-Cursors"
-CURSOR_ACCENT_DIR="$CURSOR_ROOT/$CURSOR_ACCENT"
-CURSOR_DARK_DIR="$CURSOR_ROOT/$CURSOR_DARK"
-CURSOR_DL_BASE="https://github.com/catppuccin/cursors/releases/download/v$CURSOR_VERSION"
-CURSOR_ACCENT_ZIP="${CURSOR_ACCENT,,}.zip"
-CURSOR_DARK_ZIP="${CURSOR_DARK,,}.zip"
-CURSOR_ACCENT_DL="$CURSOR_DL_BASE/$CURSOR_ACCENT_ZIP"
-CURSOR_DARK_DL="$CURSOR_DL_BASE/$CURSOR_DARK_ZIP"
+FLAVOURNAME="Mocha"
+ACCENTNAME="Mauve"
+CURSORDIR="${XDG_DATA_HOME:-$HOME/.local/share}/icons"
 
-echo "Downloading and updating the Catppuccin cursors to $CURSOR_VERSION"
+echo "Downloading and updating the latest version of Catppuccin $FLAVOURNAME $ACCENTNAME cursors..."
 
-if [ -d "$CURSOR_ACCENT_DIR" ]; then
-	rm -rf "$CURSOR_ACCENT_DIR"
-fi
+mkdir -p "$HOME/Downloads" "$CURSORDIR"
+cd "$HOME/Downloads" || return
 
-if [ -d "$CURSOR_DARK_DIR" ]; then
-	rm -rf "$CURSOR_DARK_DIR"
-fi
+curl https://api.github.com/repos/catppuccin/cursors/releases/latest |
+	grep "browser_download_url" |
+	grep -E "catppuccin-${FLAVOURNAME,,}-(${ACCENTNAME,,}|dark)-cursors.zip" |
+	cut -d '"' -f 4 |
+	wget -q -i -
 
-wget "$CURSOR_ACCENT_DL"
-unzip "$CURSOR_ACCENT_ZIP" -d "$CURSOR_ACCENT_DIR"
-wget "$CURSOR_DARK_DL"
-unzip "$CURSOR_DARK_ZIP" -d "$CURSOR_DARK_DIR"
+unzip -q catppuccin-"${FLAVOURNAME,,}"-"${ACCENTNAME,,}"-cursors.zip
+unzip -q catppuccin-"${FLAVOURNAME,,}"-dark-cursors.zip
+
+for dir in catppuccin-*; do
+	if [ -d "$dir" ]; then
+		newname=$(echo "$dir" |
+			sed -E 's/catppuccin-([a-z]+)-([a-z]+)-cursors/Catppuccin-\u\1-\u\2-Cursors/')
+		newname=$(echo "$newname" |
+			sed -E 's/catppuccin-([a-z]+)-cursors/Catppuccin-\u\1-Cursors/')
+		mv "$dir" "$newname"
+	fi
+done
+
+mv ./Catppuccin-"$FLAVOURNAME"-"$ACCENTNAME"-Cursors "$CURSORDIR"
+mv ./Catppuccin-"$FLAVOURNAME"-Dark-Cursors "$CURSORDIR"
 
 cd "$HOME" || return
