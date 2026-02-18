@@ -3,6 +3,9 @@ Id_1=91c5c3c5-da20-4de6-a9ed-bf7c0044afb9
 Number=1
 Rows=1
 
+[Effect-zoom]
+MouseTracking=1
+
 [NightColor]
 Active=true
 
