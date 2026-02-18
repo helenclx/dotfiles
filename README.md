@@ -49,7 +49,8 @@ My yadm bootstrap program will install these software and dependencies after clo
 	- [fcitx5-qt](https://github.com/fcitx/fcitx5-qt) and [fcitx5-gtk](https://github.com/fcitx/fcitx5-gtk) — required to make Fcitx 5 work across various apps
 	- [Noto CJK fonts](https://github.com/notofonts/noto-cjk) (`noto-fonts-cjk` in Arch Linux's repository) — required for displaying Chinese characters
 - [Fish shell](https://fishshell.com/)
-	- NOTE: My yadm bootstrap program will change the login shell to fish. 
+	- My yadm bootstrap program will change the login shell to fish. 
+	- If `fortune` and `cowsay` are installed, my fish shell will greet with random quotes and creatures on each session.
 - [Foliate](https://johnfactotum.github.io/foliate/)
 - [FreeTube](https://freetubeapp.io/)
 - [fzf](https://github.com/junegunn/fzf)
@@ -77,7 +78,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [topgrade](https://github.com/topgrade-rs/topgrade) (installed from AUR)
 - [Vim](https://www.vim.org/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (installed with [pipx](https://github.com/pypa/pipx))
-	- NOTE: My bootstrap program will also install [Deno](https://deno.com/), which is required by yt-dlp to [solve YouTube's JavaScript challenges](https://github.com/yt-dlp/yt-dlp/wiki/EJS).
+	- My bootstrap program will also install [Deno](https://deno.com/), which is required by yt-dlp to [solve YouTube's JavaScript challenges](https://github.com/yt-dlp/yt-dlp/wiki/EJS).
 - [yt-x](https://github.com/Benexl/yt-x)
 - [Zellij](https://zellij.dev/)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
@@ -85,6 +86,10 @@ My yadm bootstrap program will install these software and dependencies after clo
 ## Extras
 
 This repository also includes a [`Scripts`](./Scripts) directory, which stores my shell scripts for system-wide utilities. I have configured Bash and fish shell to add my `Scripts` directory to the `$PATH` environment variable.
+
+## Permission
+
+You are free to copy my configuration and scripts for setting up your own machine(s). However, keep in mind that my setup has been heavily customised for my personal use, so beware the risk of copying someone else's setup without understanding the changes made.
 
 ## Credits
 
