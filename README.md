@@ -59,6 +59,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [glow](https://github.com/charmbracelet/glow)
 - [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)
 - [Halloy](https://halloy.chat/)
+- [Heroic Games Launcher](https://heroicgameslauncher.com/) (install `heroic-games-launcher-bin` from AUR)
 - [hyfetch](https://github.com/hykilpikonna/hyfetch)
 - [Karousel](https://github.com/peterfajdiga/karousel)
 - [Kate](https://kate-editor.org/)
