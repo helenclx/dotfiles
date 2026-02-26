@@ -7,11 +7,6 @@ echo "----------------"
 echo "Install poke-cli"
 echo "----------------"
 
-echo "Navigating to the Downloads directory..."
-cd "$HOME/Downloads" || return
-
-cd "$HOME" || return
-
 echo "Fetching the ZIP archive download URL of the latest version of poke-cli..."
 POKECLI_URL=$(curl https://api.github.com/repos/digitalghost-dev/poke-cli/releases/latest |
 	grep "browser_download_url" |
@@ -24,12 +19,13 @@ if [ -z "$POKECLI_URL" ]; then
 fi
 
 ZIP_ARCHIVE=$(basename "$POKECLI_URL")
+DL_OUTPUT_DIR="$HOME/Downloads"
 
 echo "Downloading ZIP file: $ZIP_ARCHIVE..."
-curl -L -O "$POKECLI_URL"
+curl -L -O "$POKECLI_URL" --output-dir "$DL_OUTPUT_DIR"
 
 OUTPUT_PATH="$HOME/.local/bin"
 echo "Extracting poke-cli from the ZIP archive to $OUTPUT_PATH..."
-unzip -j "$ZIP_ARCHIVE" poke-cli -d "$OUTPUT_PATH"
+unzip -j "$DL_OUTPUT_DIR/$ZIP_ARCHIVE" poke-cli -d "$OUTPUT_PATH"
 
 echo "All done :)"
