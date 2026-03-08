@@ -17,7 +17,7 @@ function fish_greeting
 end
 
 # Set theme for fish shell
-fish_config theme choose "Catppuccin Mocha"
+fish_config theme choose catppuccin-mocha
 
 # Set fish shell prompt
 fish_config prompt choose nim
