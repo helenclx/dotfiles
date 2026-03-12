@@ -73,6 +73,7 @@ My yadm bootstrap program will install these software and dependencies after clo
 - [Neovim](https://neovim.io/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Starship](https://starship.rs/)
+- [Stretchly](https://hovancik.net/stretchly/)
 - [Superfile](https://superfile.dev/)
 - [tealdeer](https://github.com/tealdeer-rs/tealdeer)
 - [Tokodon](https://apps.kde.org/en-gb/tokodon/)
