@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+echo "----------------"
+echo "Install Karousel"
+echo "----------------"
+
+mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
+
+echo "Fetching Karousel tarball URL..."
+TARBALL_URL=$(curl -s https://api.github.com/repos/peterfajdiga/karousel/releases/latest | grep browser_download_url | cut -d\" -f4 | grep .tar.gz)
+
+if [ -z "$TARBALL_URL" ]; then
+	echo "No Karousel tarball download URL found!"
+	exit 1
+fi
+
+TARBALL_NAME=$(basename "$TARBALL_URL")
+echo "Downloading tarball: $TARBALL_NAME..."
+curl -# -L "$TARBALL_URL" -o "$TARBALL_NAME"
+
+echo "Extracting $TARBALL_NAME to the KWin scripts folder..."
+tar -xf "$TARBALL_NAME" -C ~/.local/share/kwin/scripts/
+
+cd "$HOME" || return
+echo "Done"

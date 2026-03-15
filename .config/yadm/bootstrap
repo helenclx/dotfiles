@@ -24,13 +24,7 @@ bash "$BOOTSTRAP_DIR/aur.sh"
 log_bootstrap "extra-software"
 
 echo "Downloading and installing the latest version of Karousel, the script to add scrollable tiling window management to KDE Plasma..."
-mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
-curl -s https://api.github.com/repos/peterfajdiga/karousel/releases/latest |
-	grep '"tarball_url":' |
-	sed -E 's/.*"([^"]+)".*/\1/' |
-	xargs curl -L |
-	tar -xz -C ~/.local/share/kwin/scripts/
-cd "$HOME" || return
+bash ~/Scripts/karousel-install 2>&1 | tee "$BOOTSTRAP_LOG_DIR/karousel.log"
 
 log_bootstrap "catppuccin-kde"
 log_bootstrap "klassy"
