@@ -1,5 +1,6 @@
 # Export $PATH
 fish_add_path -P $HOME/Scripts
+fish_add_path -P $HOME/Scripts/software-install
 fish_add_path -P $HOME/Scripts/private
 fish_add_path -P $HOME/bin
 fish_add_path -P $HOME/.local/bin
