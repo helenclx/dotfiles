@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+echo "----------------"
+echo "Install FreeTube"
+echo "----------------"
+
+mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
+
+echo "Fetching the the latest version binary of FreeTube..."
+FREETUBE_URL=$(curl -s https://api.github.com/repos/FreeTubeApp/FreeTube/releases |
+	grep '"browser_download_url":' |
+	grep '\.pacman"' |
+	head -n 1 |
+	sed -E 's/.*"([^"]+)".*/\1/')
+
+if [ -z "$FREETUBE_URL" ]; then
+	echo "No FreeTube binary download URL found!"
+	exit 1
+fi
+
+FREETUBE_BIN=$(basename "$FREETUBE_URL")
+echo "Downloading binary: $FREETUBE_BIN..."
+curl -L -O "$FREETUBE_URL"
+
+echo "Installing the latest version binary of FreeTube: $FREETUBE_BIN..."
+sudo pacman -U "$FREETUBE_BIN"
+
+cd "$HOME" || return

@@ -27,14 +27,6 @@ curl -L -O "$STRETCHLY_URL"
 STRETCHLY_BIN=$(basename "$STRETCHLY_URL")
 sudo pacman -U "$STRETCHLY_BIN"
 
-echo "Installing the latest version of FreeTube..."
-FREETUBE_URL=$(curl -s https://api.github.com/repos/FreeTubeApp/FreeTube/releases |
-	grep '"browser_download_url":' |
-	grep '\.pacman"' |
-	head -n 1 |
-	sed -E 's/.*"([^"]+)".*/\1/')
-curl -L -O "$FREETUBE_URL"
-FREETUBE_BIN=$(basename "$FREETUBE_URL")
-sudo pacman -U "$FREETUBE_BIN"
+bash freetube-install
 
 cd "$HOME" || return
