@@ -20,6 +20,7 @@ $nodejs\
 $python\
 $php\
 $c\
+$golang\
 $rust\
 [](fg:prev_bg bg:color_mauve)\
 $docker_context\
@@ -126,6 +127,11 @@ format = '[ $symbol( $version) ]($style)'
 
 [c]
 symbol = " "
+style = "fg:color_crust bg:prev_bg" # fg redefined, as prev module may not exist
+format = '[ $symbol( $version) ]($style)'
+
+[golang]
+symbol = ""
 style = "fg:color_crust bg:prev_bg" # fg redefined, as prev module may not exist
 format = '[ $symbol( $version) ]($style)'
 
