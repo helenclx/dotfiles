@@ -29,4 +29,7 @@ sudo pacman -U "$STRETCHLY_BIN"
 
 bash freetube-install
 
+echo "Downloading and installing the latest version of Karousel, the script to add scrollable tiling window management to KDE Plasma..."
+bash karousel-install
+
 cd "$HOME" || return
