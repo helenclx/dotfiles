@@ -1,6 +1,5 @@
 alias bathelp='bat --plain --language=help'
-alias eza='eza --icons=auto'
-alias eza-size='eza -l --total-size'
+alias lsd-size='lsd -l --total-size'
 alias fd='fd --hidden'
 alias grep='grep --color=auto'
 alias icat='kitten icat'
