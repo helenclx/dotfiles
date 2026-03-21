@@ -8,6 +8,9 @@
 echo "Remove image thumbnails..."
 rm -r ~/.cache/thumbnails
 
+echo "Clear Elecwhat cache..."
+rm -r ~/.config/elecwhat/Cache/Cache_Data/*
+
 echo "Clear Discord cache..."
 rm -r ~/.config/discord/Cache/Cache_Data/*
 
