@@ -28,7 +28,7 @@ record.record_options.record_area_width 1920
 record.record_options.record_cursor false
 record.record_options.restore_portal_session true
 record.record_options.show_notifications false
-record.record_options.use_led_indicator true
+record.record_options.use_led_indicator false
 record.record_options.video_bitrate 40000
 record.record_options.video_height 1080
 record.record_options.video_quality very_high
@@ -68,7 +68,7 @@ replay.record_options.record_area_width 1920
 replay.record_options.record_cursor true
 replay.record_options.restore_portal_session true
 replay.record_options.show_notifications false
-replay.record_options.use_led_indicator true
+replay.record_options.use_led_indicator false
 replay.record_options.video_bitrate 40000
 replay.record_options.video_height 1080
 replay.record_options.video_quality custom
@@ -110,7 +110,7 @@ screenshot.show_notifications false
 screenshot.take_screenshot_hotkey 102 0
 screenshot.take_screenshot_region_hotkey 102 4
 screenshot.take_screenshot_window_hotkey 102 1
-screenshot.use_led_indicator true
+screenshot.use_led_indicator false
 streaming.custom.container flv
 streaming.custom.key 
 streaming.custom.url 
@@ -135,7 +135,7 @@ streaming.record_options.record_area_width 1920
 streaming.record_options.record_cursor true
 streaming.record_options.restore_portal_session true
 streaming.record_options.show_notifications false
-streaming.record_options.use_led_indicator true
+streaming.record_options.use_led_indicator false
 streaming.record_options.video_bitrate 8000
 streaming.record_options.video_height 1080
 streaming.record_options.video_quality custom
