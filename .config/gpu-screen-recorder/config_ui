@@ -14,7 +14,7 @@ record.record_options.application_audio_invert false
 record.record_options.audio_codec opus
 record.record_options.audio_track_item false [add_audio_track]
 record.record_options.audio_track_item false device:default_output
-record.record_options.change_video_resolution false
+record.record_options.change_video_resolution true
 record.record_options.codec auto
 record.record_options.color_range limited
 record.record_options.fps 60
