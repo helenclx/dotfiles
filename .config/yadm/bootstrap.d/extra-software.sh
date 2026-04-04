@@ -16,6 +16,9 @@ curl -sL "https://raw.githubusercontent.com/Benexl/yt-x/refs/heads/master/yt-x" 
 echo "Installing pacman binaries of extra software..."
 mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
 
+echo "Installing http-parser, a dependency for some of the following software, from AUR..."
+yay -S http-parser
+
 echo "Installing the latest version of Stretchly..."
 STRETCHLY_URL=$(curl -s https://api.github.com/repos/hovancik/stretchly/releases |
 	grep '"browser_download_url":' |
