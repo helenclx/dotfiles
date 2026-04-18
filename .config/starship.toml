@@ -85,17 +85,19 @@ format = "[$ssh_symbol $hostname ]($style)"
 style = "bg:prev_bg fg:color_crust"
 read_only_style = "fg:color_red bg:prev_bg"
 format = "[ $path ]($style)[$read_only]($read_only_style)"
-truncation_length = 3
+truncation_length = 1
 truncation_symbol = "…/"
 read_only = "󰌾 "
+fish_style_pwd_dir_length = 1
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
-"Developer" = "󰲋 "
-"Videos" = " "
+# Note: fish_style_pwd_dir_length does not work if directory.substitutions is set
+# [directory.substitutions]
+# "Documents" = "󰈙 "
+# "Downloads" = " "
+# "Music" = "󰝚 "
+# "Pictures" = " "
+# "Developer" = "󰲋 "
+# "Videos" = " "
 
 [git_branch]
 symbol = ""
