@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+echo "-----------------"
+echo "Install Stretchly"
+echo "-----------------"
+
+mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
+
+echo "Fetching the latest version of Stretchly..."
+STRETCHLY_URL=$(curl -s https://api.github.com/repos/hovancik/stretchly/releases |
+	grep '"browser_download_url":' |
+	grep '\.pacman"' |
+	grep -v 'aarch' |
+	head -n 1 |
+	sed -E 's/.*"([^"]+)".*/\1/')
+
+if [ -z "$STRETCHLY_URL" ]; then
+	echo "No Stretchly download URL found!"
+	exit 1
+fi
+
+STRETCHLY_BIN=$(basename "$STRETCHLY_URL")
+echo "Downloading binary: $STRETCHLY_BIN..."
+curl -L -O "$STRETCHLY_URL"
+
+echo "Installing the latest version binary of Stretchly: $STRETCHLY_BIN..."
+sudo pacman -U "$STRETCHLY_BIN"
+
+cd "$HOME" || return

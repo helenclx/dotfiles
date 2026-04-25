@@ -19,17 +19,7 @@ mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
 echo "Installing http-parser, a dependency for some of the following software, from AUR..."
 yay -S http-parser
 
-echo "Installing the latest version of Stretchly..."
-STRETCHLY_URL=$(curl -s https://api.github.com/repos/hovancik/stretchly/releases |
-	grep '"browser_download_url":' |
-	grep '\.pacman"' |
-	grep -v 'aarch' |
-	head -n 1 |
-	sed -E 's/.*"([^"]+)".*/\1/')
-curl -L -O "$STRETCHLY_URL"
-STRETCHLY_BIN=$(basename "$STRETCHLY_URL")
-sudo pacman -U "$STRETCHLY_BIN"
-
+bash strechly-install
 bash freetube-install
 
 echo "Downloading and installing the latest version of Karousel, the script to add scrollable tiling window management to KDE Plasma..."
