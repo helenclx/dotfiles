@@ -24,6 +24,9 @@ buffer = "replace-pane"
 [buffer.date_separators]
 format = "%A, %-d %B %Y"
 
+[buffer.nickname]
+away = { dimmed = 0.7 }
+
 [buffer.server_messages.condense]
 messages = ["change-nick", "join", "part", "quit"]
 dimmed = 0.7
