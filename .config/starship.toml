@@ -29,6 +29,7 @@ $jobs\
 [](fg:prev_bg bg:color_surface0)\
 $time\
 $cmd_duration\
+$status\
 $memory_usage\
 [ ](fg:prev_bg)\
 $line_break$character"""
@@ -166,6 +167,11 @@ format = '[  $time ]($style)'
 [cmd_duration]
 style = "fg:prev_fg bg:prev_bg"
 format = "[ $duration ]($style)"
+
+[status]
+style = "fg:bold color_red bg:prev_bg"
+format = "[$symbol$status ]($style)"
+disabled = false
 
 [memory_usage]
 symbol = "󰍛"
