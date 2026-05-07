@@ -170,7 +170,7 @@ format = "[ $duration ]($style)"
 [memory_usage]
 symbol = "󰍛"
 style = "fg:bold color_red bg:prev_bg"
-format = "[$symbol ${ram}]($style) "
+format = "[$symbol ${ram} ]($style)"
 disabled = false
 
 [character]
