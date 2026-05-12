@@ -6,13 +6,14 @@
 # sudo pacman -S --needed gum
 
 # This script is used to write a conventional Git commit message.
+# Conventional Commits: https://www.conventionalcommits.org
 # It prompts the user to choose between Git and yadm,
 # and the type of commit as specified in the conventional commit spec.
 # And then prompts for the summary and detailed description of the message
 # and uses the values provided. as the summary and details of the message.
 
 GIT_PROGRAM=$(gum choose "git" "yadm")
-TYPE=$(gum choose "fix" "feat" "docs" "style" "refactor" "test" "chore" "revert")
+TYPE=$(gum choose "build" "chore" "ci" "docs" "feat" "fix" "perf" "refactor" "revert" "style" "test")
 SCOPE=$(gum input --placeholder "scope")
 
 # Since the scope is optional, wrap it in parentheses if it has a value.
