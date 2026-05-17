@@ -6,27 +6,27 @@ format = """
 [](color_surface0)\
 $os\
 $shell\
-[](fg:prev_bg bg:color_maroon)\
+[](fg:prev_bg bg:color_maroon)\
 $username\
 $hostname\
-[](fg:prev_bg bg:color_yellow)\
+[](fg:prev_bg bg:color_yellow)\
 $directory\
-[](fg:prev_bg bg:color_teal)\
+[](fg:prev_bg bg:color_teal)\
 $git_branch\
 $git_commit\
 $git_status\
-[](fg:prev_bg bg:color_blue)\
+[](fg:prev_bg bg:color_blue)\
 $nodejs\
 $python\
 $php\
 $c\
 $golang\
 $rust\
-[](fg:prev_bg bg:color_mauve)\
+[](fg:prev_bg bg:color_mauve)\
 $docker_context\
 $conda\
 $jobs\
-[](fg:prev_bg bg:color_surface0)\
+[](fg:prev_bg bg:color_surface0)\
 $time\
 $cmd_duration\
 $status\
