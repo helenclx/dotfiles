@@ -16,6 +16,7 @@ $git_branch\
 $git_commit\
 $git_status\
 [](fg:prev_bg bg:color_blue)\
+$deno\
 $nodejs\
 $python\
 $php\
@@ -113,10 +114,15 @@ format = "[($tag)]($style) "
 style = "fg:color_crust bg:prev_bg" # fg redefined, as prev module may not exist
 format = '[($all_status$ahead_behind )]($style)'
 
+[deno]
+symbol = ""
+style = "fg:color_crust bg:prev_bg" # fg redefined, as prev module may not exist
+format = '[ $symbol( $version) ]($style)'
+
 [nodejs]
 symbol = ""
-style = "fg:color_crust bg:prev_bg"
-format = '[ $symbol( $version) ](fg:color_crust bg:prev_bg)' # bug, must set explicitly
+style = "fg:color_crust bg:prev_bg" # fg redefined, as prev module may not exist
+format = '[ $symbol( $version) ]($style)'
 
 [python]
 symbol = ""
