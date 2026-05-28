@@ -3,3 +3,13 @@ filetype plugin on
 
 set tabstop=2 shiftwidth=2
 color a11y-dark
+
+" Lets Vim write to your local clipboard through the terminal itself when yanking a text
+function! Osc52Yank()
+	let buffer = system('base64 -w0', @0)
+	let buffer = substitute(buffer, "\n", "", "g")
+	let buffer = '\e]52;c;' . buffer . '\x07'
+	silent exe "!echo -ne " . shellescape(buffer) . " > /dev/tty"
+endfunction
+
+autocmd TextYankPost * call Osc52Yank()
