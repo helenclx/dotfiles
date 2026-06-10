@@ -31,7 +31,7 @@ away = { dimmed = 0.7 }
 messages = ["change-nick", "join", "part", "quit"]
 dimmed = 0.7
 
-[buffer.server_messages.topic]
+[buffer.channel.topic_banner]
 enabled = false
 
 [buffer.timestamp]
