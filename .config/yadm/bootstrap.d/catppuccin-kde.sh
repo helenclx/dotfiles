@@ -2,10 +2,10 @@
 
 echo "Setting up the Catppuccin global theme for KDE Plasma..."
 
-mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
+mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || exit 1
 
 echo "Cloning the Catppuccin global theme for KDE Plasma into the Downloads folder..."
-git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde && cd catppuccin-kde || return
+git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde && cd catppuccin-kde || exit 1
 echo "Installing the Catppuccin global theme for KDE Plasma..."
 chmod +x install.sh
 ./install.sh
@@ -17,7 +17,7 @@ CURSORDIR="${XDG_DATA_HOME:-$HOME/.local/share}/icons"
 echo "Downloading and updating the latest version of Catppuccin $FLAVOURNAME $ACCENTNAME cursors..."
 
 mkdir -p "$HOME/Downloads" "$CURSORDIR"
-cd "$HOME/Downloads" || return
+cd "$HOME/Downloads" || exit 1
 
 curl https://api.github.com/repos/catppuccin/cursors/releases/latest |
 	grep "browser_download_url" |
@@ -45,4 +45,4 @@ rm -rf "$CURSORDIR/Catppuccin-$FLAVOURNAME-Dark-Cursors"
 mv ./Catppuccin-"$FLAVOURNAME"-"$ACCENTNAME"-Cursors "$CURSORDIR"
 mv ./Catppuccin-"$FLAVOURNAME"-Dark-Cursors "$CURSORDIR"
 
-cd "$HOME" || return
+cd "$HOME" || exit 1

@@ -14,7 +14,7 @@ echo "Installing yt-x from its GitHub repository..."
 curl -sL "https://raw.githubusercontent.com/Benexl/yt-x/refs/heads/master/yt-x" -o ~/.local/bin/yt-x && chmod +x ~/.local/bin/yt-x
 
 echo "Installing pacman binaries of extra software..."
-mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
+mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || exit 1
 
 echo "Installing http-parser, a dependency for some of the following software, from AUR..."
 yay -S http-parser
@@ -25,4 +25,4 @@ bash freetube-install
 echo "Downloading and installing the latest version of Karousel, the script to add scrollable tiling window management to KDE Plasma..."
 bash karousel-install
 
-cd "$HOME" || return
+cd "$HOME" || exit 1

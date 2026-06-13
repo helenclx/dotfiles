@@ -34,9 +34,9 @@ log_bootstrap "neovim"
 echo "Updating Helen Chong's yadm repo origin URL..."
 yadm remote set-url origin "git@git.helenchong.dev:helenchong/dotfiles.git"
 echo "Updating Helen Chong's LazyVim configuration repo origin URL..."
-cd "$HOME/.config/nvim" || return
+cd "$HOME/.config/nvim" || exit 1
 git remote set-url origin "git@git.helenchong.dev:helenchong/LazyVim.git"
-cd "$HOME" || return
+cd "$HOME" || exit 1
 
 echo "Changing the login shell to fish..."
 chsh -s /usr/bin/fish

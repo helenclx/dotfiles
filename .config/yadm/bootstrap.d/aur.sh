@@ -2,12 +2,12 @@
 
 AUR_HELPER="paru"
 
-mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
+mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || exit 1
 
 echo "Compiling $AUR_HELPER, the AUR helper..."
 sudo pacman -S --needed base-devel
 git clone "https://aur.archlinux.org/$AUR_HELPER.git"
-cd $AUR_HELPER || return
+cd $AUR_HELPER || exit 1
 makepkg -si
 
 install_aur_package() {
@@ -27,4 +27,4 @@ install_aur_package "heroic-games-launcher-bin" "heroic-games-launcher"
 echo "Installing topgrade..."
 install_aur_package "topgrade"
 
-cd "$HOME" || return
+cd "$HOME" || exit 1

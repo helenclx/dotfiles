@@ -2,7 +2,7 @@
 
 echo "Downloading and installing Klassy, a theming plugin for KDE Plasma..."
 
-mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || return
+mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || exit 1
 
 DL_BASE_URL="https://download.opensuse.org/repositories/home:/paul4us/Arch/x86_64/"
 
@@ -25,4 +25,4 @@ echo "Download complete: $LATEST_BIN"
 echo "Installing Klassy..."
 sudo pacman -U "$LATEST_BIN"
 
-cd "$HOME" || return
+cd "$HOME" || exit 1
