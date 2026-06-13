@@ -19,7 +19,6 @@ log_bootstrap "locale"
 echo "Installing software for these configuration files..."
 
 log_bootstrap "pacman"
-log_bootstrap "yay"
 bash "$BOOTSTRAP_DIR/aur.sh"
 log_bootstrap "extra-software"
 

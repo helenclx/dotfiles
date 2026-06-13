@@ -23,4 +23,4 @@ echo "Recursively remove unused packages (orphans) and their configuration files
 sudo pacman -Qdtq | ifne sudo pacman -Rns -
 
 echo "Clean cached packages..."
-yay -Sc
+paru -Sc
