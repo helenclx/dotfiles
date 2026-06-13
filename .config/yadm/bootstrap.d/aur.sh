@@ -5,10 +5,12 @@ AUR_HELPER="paru"
 mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || exit 1
 
 echo "Compiling $AUR_HELPER, the AUR helper..."
-sudo pacman -S --needed base-devel
-git clone "https://aur.archlinux.org/$AUR_HELPER.git"
-cd $AUR_HELPER || exit 1
-makepkg -si
+{
+	sudo pacman -S --needed base-devel
+	git clone "https://aur.archlinux.org/$AUR_HELPER.git"
+	cd $AUR_HELPER || exit 1
+	makepkg -si
+} 2>&1 | tee "$BOOTSTRAP_LOG_DIR/$AUR_HELPER.log"
 
 install_aur_package() {
 	local PACKAGE=$1
