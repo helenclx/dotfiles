@@ -1,5 +1,4 @@
 .config/halloy/passwords/*
-.config/clilol/*
 .ssh/config
 .ssh/id_ed25519_*
 Scripts/private/*
