@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Install required packages from the Arch Linux repository:
 # sudo pacman -S --needed gum
@@ -12,8 +12,11 @@
 GIT_PROGRAM=$(gum choose "git" "yadm")
 SCOPE=$(gum input --placeholder "scope")
 
+# If the scope has a value, append a colon and a space
+test -n "$SCOPE" && SCOPE="$SCOPE: "
+
 # Pre-populate the input with "scope:" so that the user may change it
-SUMMARY=$(gum input --value "$SCOPE: " --placeholder "Summary of this change")
+SUMMARY=$(gum input --value "$SCOPE" --placeholder "Summary of this change")
 DESCRIPTION=$(gum write --placeholder "Details of this change")
 
 # Commit these changes if user confirms
