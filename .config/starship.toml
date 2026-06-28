@@ -127,7 +127,7 @@ format = '[ $symbol( $version) ]($style)'
 [python]
 symbol = ""
 style = "fg:color_crust bg:prev_bg" # fg redefined, as prev module may not exist
-format = '[ $symbol( $version)( $virtualenv) ]($style)' 
+format = '[ $symbol( $version)( \($virtualenv\)) ]($style)' 
 
 [php]
 symbol = ""
