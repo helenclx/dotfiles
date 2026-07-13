@@ -5,6 +5,8 @@
 # Install required packages from the Arch Linux repository:
 # sudo pacman -S --needed pacman-contrib moreutils
 
+set -euo pipefail
+
 echo "Remove image thumbnails..."
 rm -r ~/.cache/thumbnails
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 echo "Setting up the system locale..."
 
 LOCALE_GEN_FILE=/etc/locale.gen

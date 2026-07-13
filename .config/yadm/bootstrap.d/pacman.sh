@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 echo "Installing packages from Arch Linux's repository..."
 
 echo "Installing software dependencies from Arch Linux's repository..."

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 AUR_HELPER="paru"
 
 mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || exit 1

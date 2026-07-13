@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 echo "Downloading and installing Klassy, a theming plugin for KDE Plasma..."
 
 mkdir -p "$HOME/Downloads" && cd "$HOME/Downloads" || exit 1

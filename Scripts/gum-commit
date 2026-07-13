@@ -9,6 +9,8 @@
 # and the project/repository scope of the commit.
 # And then prompts for thesummary and detailed description of the message
 
+set -euo pipefail
+
 GIT_PROGRAM=$(gum choose "git" "yadm")
 SCOPE=$(gum input --placeholder "scope")
 

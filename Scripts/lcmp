@@ -11,6 +11,8 @@
 # On Arch Linux, run the following command before starting the MariaDB service:
 # sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
+set -euo pipefail
+
 service_action() {
 	local SERVICES=('caddy' 'mariadb' 'php-fpm')
 	sudo systemctl "$1" "${SERVICES[@]}"

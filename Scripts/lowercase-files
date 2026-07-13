@@ -5,6 +5,8 @@
 # Credit: https://unix.stackexchange.com/questions/20222/change-entire-directory-tree-to-lower-case-names
 # Added the `-mindepth 1` flag to prevent find from returning the starting directory itself
 
+set -euo pipefail
+
 find . -mindepth 1 -depth -exec sh -c '
 	t=${0%/*}/$(printf %s "${0##*/}" | tr "[:upper:]" "[:lower:]");
 	[ "$t" = "$0" ] || mv -i "$0" "$t"
