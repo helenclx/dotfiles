@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Perform systemd service actions for the LCMP (Linux, Caddy, MariaDB and PHP) stack
+# Check if each component of the stack exists as a systemd service before performing a systemd service action
 
 # Install required packages from the Arch Linux repository:
 # sudo pacman -S --needed caddy mariadb php php-fpm
@@ -13,9 +14,26 @@
 
 set -euo pipefail
 
+is_service_exists() {
+	local SERVICE=$1
+	if systemctl list-unit-files --type service --no-legend "${SERVICE}.service" | grep -qF "${SERVICE}.service"; then
+		return 0
+	else
+		return 1
+	fi
+}
+
 service_action() {
 	local SERVICES=('caddy' 'mariadb' 'php-fpm')
-	sudo systemctl "$1" "${SERVICES[@]}"
+	local SERVICE
+	for SERVICE in "${SERVICES[@]}"; do
+		if is_service_exists "$SERVICE"; then
+			echo "$SERVICE service found!"
+			sudo systemctl "$1" "$SERVICE"
+		else
+			echo "$SERVICE service not found! Skipping..."
+		fi
+	done
 }
 
 if [[ "$1" == "start" ]]; then
@@ -36,9 +54,9 @@ elif [[ "$1" == "disable" ]]; then
 	service_action "stop"
 	service_action "$1"
 elif [[ "$1" == "status" ]]; then
+	echo "Checking the status of LCMP stack..."
 	service_action "$1"
 else
-	# echo "Usage: $0 ACTION"
 	echo "Usage: $(basename "${0}") ACTION"
 	echo "Valid actions: start, stop, restart, enable, disable, status"
 fi
