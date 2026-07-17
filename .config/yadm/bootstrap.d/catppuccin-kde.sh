@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
-
 echo "Setting up the Catppuccin global theme for KDE Plasma..."
 
 echo "Cloning the Catppuccin global theme for KDE Plasma into the Downloads folder..."
