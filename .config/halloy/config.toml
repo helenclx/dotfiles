@@ -21,6 +21,9 @@ message_user = "replace-pane"
 [actions.sidebar]
 buffer = "replace-pane"
 
+[buffer.channel.topic_banner]
+enabled = false
+
 [buffer.date_separators]
 format = "%A, %-d %B %Y"
 
@@ -31,16 +34,14 @@ away = { dimmed = 0.7 }
 messages = ["change-nick", "join", "part", "quit"]
 dimmed = 0.7
 
-[buffer.channel.topic_banner]
-enabled = false
-
 [buffer.timestamp]
 context_menu_format = "%d %B %Y, %T"
 
 [servers.omglol]
 server = "irc.social.lol"
 nickname = "helenchong"
-realname = "Helen Chong (they/she)"
+realname = "Helen Chong"
+metadata = { pronouns = "they/she" }
 
 [servers.omglol.sasl.plain]
 username = "helenchong"
