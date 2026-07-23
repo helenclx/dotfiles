@@ -37,6 +37,9 @@ dimmed = 0.7
 [buffer.timestamp]
 context_menu_format = "%d %B %Y, %T"
 
+[display]
+nicklist_nickname = ["color"]
+
 [servers.omglol]
 server = "irc.social.lol"
 nickname = "helenchong"
